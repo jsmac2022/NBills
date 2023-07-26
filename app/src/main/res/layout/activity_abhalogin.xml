@@ -1,0 +1,448 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activities.health_id_abdm.ABHALoginActivity">
+
+
+
+    <RelativeLayout
+        android:id="@+id/toolbar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:id="@+id/toolbar_layout_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                app:titleTextColor="#FFFFFF"
+                android:background="#2196F3">
+
+                <ImageView
+                    android:id="@+id/backArrow_IMG"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/arrow_back_white_24dp"/>
+
+                <ImageView
+                    android:id="@+id/tv_header_title"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:src="@drawable/nict_bills_services_logo" />
+
+
+            </androidx.appcompat.widget.Toolbar>
+
+        </com.google.android.material.appbar.AppBarLayout>
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:visibility="visible"
+                    android:id="@+id/ABHA_Screen_LL"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/enter_abha_LL"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/enter_ABHA_Number_ABHA_address"
+                        android:textSize="16dp"
+                        android:textStyle="bold"
+                        android:textColor="#DF000000"/>
+
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="5dp"
+                        android:hint="@string/abha_address_abha_number"
+                        android:orientation="horizontal">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/abha_number_EditText"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:inputType="textEmailAddress"
+                            android:maxLines="1"
+                            android:textColor="#000" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/verify_abha_Button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:text="@string/verify"
+                        android:textSize="16dp"
+                        android:textStyle="bold"
+                        android:visibility="visible" />
+
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:visibility="visible"
+                    android:id="@+id/mobile_login_LL"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/mobile_otp_LL"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/login_with_mobile_number"
+                            android:textSize="16dp"
+                            android:layout_margin="10dp"
+                            android:textStyle="bold"
+                            android:textColor="#DF000000"/>
+
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginRight="5dp"
+                            android:hint="@string/mobile_number"
+                            android:orientation="horizontal">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/mobile_number_EditText"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:inputType="number"
+                                android:maxLength="10"
+                                android:maxLines="1"
+                                android:textColor="#000" />
+
+                        </com.google.android.material.textfield.TextInputLayout>
+
+
+                        <LinearLayout
+                            android:id="@+id/otp_arear_LL"
+                            android:visibility="gone"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <com.google.android.material.textfield.TextInputLayout
+                                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginRight="5dp"
+                                android:hint="@string/enter_otp"
+                                android:orientation="horizontal">
+
+                                <com.google.android.material.textfield.TextInputEditText
+                                    android:id="@+id/mobile_otp_EditText"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:inputType="number"
+                                    android:maxLength="10"
+                                    android:maxLines="1"
+                                    android:textColor="#000" />
+
+                            </com.google.android.material.textfield.TextInputLayout>
+
+
+                            <TextView
+                                android:id="@+id/counttime_TV"
+                                android:layout_width="match_parent"
+                                android:gravity="center"
+                                android:text=""
+                                android:textSize="12dp"
+                                android:layout_margin="10dp"
+                                android:layout_height="wrap_content" />
+
+                            <TextView
+                                android:visibility="gone"
+                                android:id="@+id/resent_OTP_TV"
+                                android:layout_width="match_parent"
+                                android:text="@string/resend_OTP"
+                                android:textColor="#2171F3"
+                                android:textSize="14dp"
+                                android:textStyle="bold"
+                                android:layout_margin="10dp"
+                                android:layout_gravity="center"
+                                android:gravity="right"
+                                android:layout_height="wrap_content" />
+
+
+
+                        </LinearLayout>
+
+
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/get_login_otp_Button"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="10dp"
+                            android:text="@string/verify"
+                            android:textSize="16dp"
+                            android:textStyle="bold"
+                            android:visibility="visible" />
+
+
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/verify_login_otp_Button"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="10dp"
+                            android:text="@string/verify"
+                            android:textSize="16dp"
+                            android:textStyle="bold"
+                            android:visibility="gone" />
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/or"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:textColor="#000"
+                    android:textStyle="bold"
+                    android:textSize="18dp"/>
+
+
+                <LinearLayout
+                    android:id="@+id/login_in_with_mobile_No_LL"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="10dp"
+                    android:background="@drawable/linear_layout_customborder"
+                    android:layout_margin="10dp">
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/login_with_mobile_number"
+                        android:layout_gravity="center"
+                        android:textSize="15dp"
+                        android:textColor="#2196F3"
+                        android:gravity="center"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:visibility="gone"
+                    android:id="@+id/abha_number_abha_address_LL"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="10dp"
+                    android:background="@drawable/linear_layout_customborder"
+                    android:layout_margin="10dp">
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/verify_with_ABHA_number_ABHA_address"
+                        android:layout_gravity="center"
+                        android:textSize="15dp"
+                        android:textColor="#2196F3"
+                        android:gravity="center"/>
+
+                </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:visibility="gone"
+                android:id="@+id/abha_user_name_LL"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/abha_user_name_RV"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:visibility="gone"
+                android:id="@+id/abha_user_details_LL"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="10dp"
+                android:background="@drawable/linear_layout_customborder"
+                android:layout_margin="10dp">
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/ABHA_user_status"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:textColor="#268CDD"/>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/full_name"
+                        android:textSize="15dp"/>
+
+                    <TextView
+                        android:id="@+id/user_name_TV"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/full_name"
+                        android:layout_weight="1"
+                        android:gravity="right"
+                        android:textColor="#000"
+                        android:textSize="15dp"/>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/abha_address"
+                        android:textSize="15dp"/>
+
+                    <TextView
+                        android:id="@+id/abha_address_TV"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/abha_address"
+                        android:layout_weight="1"
+                        android:gravity="right"
+                        android:textColor="#000"
+                        android:textSize="15dp"/>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/abha_number"
+                        android:textSize="15dp"/>
+
+                    <TextView
+                        android:id="@+id/abha_number_TV"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/abha_number"
+                        android:layout_weight="1"
+                        android:gravity="right"
+                        android:textColor="#000"
+                        android:textSize="15dp"/>
+
+
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/more_details_BTN"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:layout_gravity="right"
+                    android:text="@string/more_details"/>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+
+
+
+</androidx.appcompat.widget.LinearLayoutCompat>

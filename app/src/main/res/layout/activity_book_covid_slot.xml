@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activities.BookCovidSlotActivity">
+
+
+
+    <RelativeLayout
+        android:id="@+id/toolbar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                app:titleTextColor="#fff"
+                android:background="#2196F3">
+
+                <ImageView
+                    android:id="@+id/backArrow_IMG"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/arrow_back_white_24dp"/>
+
+                <TextView
+                    android:visibility="visible"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="COVID-19 Vaccine Slot Finder"
+                    android:textColor="#fff"
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                    android:layout_gravity="center"
+                    android:id="@+id/toolbar_title" />
+
+            </androidx.appcompat.widget.Toolbar>
+
+        </com.google.android.material.appbar.AppBarLayout>
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:background="@drawable/card_border_toggle"
+        android:orientation="horizontal">
+
+
+        <LinearLayout
+            android:id="@+id/search_by_pi_code_LL"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="5dp"
+            android:background="@drawable/white_border_button"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textColor="#000"
+                android:textSize="15dp"
+                android:text="Search by PIN Code"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/search_by_district_LL"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="5dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textColor="#000"
+                android:textSize="15dp"
+                android:text="Search by District"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/pincode_show_hide_LL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:orientation="vertical">
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:hint="Pincode">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/pincode_TV"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:maxLines="1"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:visibility="gone"
+        android:id="@+id/search_by_district_state_show_hide_LL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/custom_border"
+            >
+
+            <Spinner
+                android:visibility="visible"
+                android:id="@+id/state_spinner"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:textSize="20sp"
+                />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/custom_border"
+            >
+
+            <Spinner
+                android:visibility="visible"
+                android:id="@+id/districts_spinner"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:textSize="20sp"
+                />
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+
+   <!-- <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Age Group"
+        android:textSize="16dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:textColor="#000"/>
+
+    <RadioGroup
+        android:id="@+id/radioAgeGroup"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_margin="5dp"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/radio_18_44_year"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="18-44"
+            android:checked="true" />
+
+        <RadioButton
+            android:id="@+id/radio_45_year"
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="45 +" />
+
+    </RadioGroup>-->
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Dose"
+        android:layout_marginTop="10dp"
+        android:textSize="16dp"
+        android:layout_marginLeft="20dp"
+        android:textColor="#000"/>
+
+    <RadioGroup
+        android:id="@+id/radioDose"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_margin="5dp"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/radioDose_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Dose 1"
+            android:checked="true" />
+
+        <RadioButton
+            android:id="@+id/radioDose_2"
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="Dose 2" />
+
+    </RadioGroup>
+
+
+
+                <Button
+                    android:id="@+id/search_BTN"
+                    android:layout_width="match_parent"
+                    android:layout_margin="10dp"
+                    android:layout_height="wrap_content"
+                    android:textAllCaps="false"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="Search Now"
+                    />
+
+
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </LinearLayout>
+
+</LinearLayout>

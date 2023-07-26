@@ -1,0 +1,514 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name">n पे</string>
+    <string name="title_activity_dashboard">डैशबोर्ड गतिविधि</string>
+    <string name="navigation_drawer_open">नेविगेशन दराज खोलें</string>
+    <string name="navigation_drawer_close">नेविगेशन ड्रॉअर बंद करें</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="action_settings">समायोजन</string>
+    <string name="downloading">डाउनलोड</string>
+    <string name="next">आगे</string>
+    <string name="skip">छोड़ें</string>
+    <string name="start">समझ गया</string>
+    <string name="slide_1_title">NICT बिल्स</string>
+    <string name="slide_1_desc">आप अपने अंतिम बिजली बिल का भुगतान और जांच आसानी से कर सकते हैं</string>
+    <string name="slide_2_title">0% शुल्क</string>
+    <string name="slide_2_desc">अपने बिजली बिल का भुगतान ऑनलाइन UPI के साथ 0% शुल्क पर करें</string>
+    <!-- <string name="slide_2_desc">Pay your electricity bills online for saving your time and energy</string>-->
+    <string name="slide_3_title">बिजली का बिल</string>
+    <string name="slide_3_desc">विवरण के साथ अपने वर्तमान बिजली बिल देखें।</string>
+    <string name="slide_4_title">ऑनलाइन भुगतान</string>
+    <string name="slide_4_desc">विभिन्न भुगतान विकल्पों में से चुनें</string>
+    <string name="no_internet_connection">कोई इंटरनेट कनेक्शन नहीं!</string>
+    <string name="retry">पुन: प्रयास</string>
+    <string name="logout">लॉग आउट</string>
+    <string name="are_you_sure_you_want_to_logout">क्या आप लॉग आउट करना चाहते हैं</string>
+    <string name="are_you_sure_you_want_to_back">क्या आप वाकई पीछे जाना चाहते हैं</string>
+    <string name="exit_yes">हाँ</string>
+    <string name="exit_no">नहीं</string>
+    <string name="open_it_in_google_play_store">NICT Bills (आवेदन पत्र डाउनलोड करने के लिए इसे Google Play Store में खोलें)</string>
+    <string name="loading">लोड हो रहा है....</string>
+    <string name="one_moment_please">कृपया प्रतीक्षा करें</string>
+    <string name="something_went_wrong">कुछ गलत हो गया</string>
+    <string name="unable_to_connect_to_server">सर्वर से कनेक्ट करने में अक्षम</string>
+    <string name="login_again">फिर से लॉगिन करें</string>
+    <string name="something_went_wrong_please_try_again_later">कुछ गलत हो गया है। कृपया बाद में दोबारा प्रयास करें</string>
+    <string name="phr_address_already_exists_try_another">PHR-पता पहले से मौजूद है एक और PHR-पता आज़माएं</string>
+    <string name="please_enter_IVRS_number">कृपया IVRS नम्बर दर्ज करें</string>
+    <string name="action">कार्य</string>
+    <string name="delete">हटाएं?</string>
+    <string name="are_you_sure_you_want_to_delete_IVRS">क्या आप IVRS को हटाना चाहते हैं</string>
+    <string name="please_wait">कृपया प्रतीक्षा करें....</string>
+    <string name="do_not_press_back_button">कृपया NICT Bills App को बंद न करें या बैक बटन पर क्लिक न करें</string>
+    <string name="payment_cancelled">भुगतान रद्द</string>
+    <string name="are_you_sure_you_want_to_exit">क्या आप निश्चित हैं आपकी बाहर निकलने की इच्छा है?</string>
+    <string name="exit">बाहर जाएं</string>
+    <string name="connecting">कनेक्ट कर रहा है....</string>
+    <string name="update_available">अपडेट उपलब्ध</string>
+    <string name="new_update_is_available_on_google_play_store">नया अपडेट Google Play Store पर उपलब्ध है</string>
+    <string name="update">अपडेट</string>
+    <string name="mobile_number_is_required">मोबाइल नंबर आवश्यक है!</string>
+    <string name="invalid_mobile_number">अमान्य मोबाइल नंबर</string>
+    <string name="getting_OTP">ओटीपी प्राप्त कर रहा है....</string>
+    <string name="kindly_mentioned_correct_mobile_number">कृपया सही मोबाइल नंबर का उल्लेख करें</string>
+    <string name="kindly_enter_the_OTP_sent_on_your_mobile_number">कृपया अपने मोबाइल नंबर पर भेजे गए OTP को दर्ज करें</string>
+    <string name="invalid_OTP">अमान्य OTP!</string>
+    <string name="resend_OTP_in">OTP को भेजें :</string>
+    <string name="otp_resend_successfully">OTP सफलतापूर्वक पुनः भेजें</string>
+    <string name="otp_send_successfully">OTP सफलतापूर्वक भेजें</string>
+    <string name="otp_verification_failed">OTP सत्यापन विफल हुआ</string>
+    <string name="kindly_mentioned_correct_OTP">कृपया सही OTP का उल्लेख करें</string>
+    <string name="bill_payment_successful_of_IVRS_number">बिल भुगतान सफल IVRS नम्बर</string>
+    <string name="bill_payment_failed_of_IVRS_number">बिल भुगतान विफल रहा IVRS नम्बर</string>
+    <string name="invalid_amount">अमान्य राशि</string>
+    <string name="pay">राशि</string>
+    <string name="kindly_fill_UPI_Id">कृपया UPI Id भरें</string>
+    <string name="download_done">डाउनलोड</string>
+    <string name="select_language" translatable="true">भाषा का चयन करें</string>
+    <string name="english" translatable="true">English</string>
+    <string name="hindi" translatable="true">हिंदी</string>
+    <string name="submit" translatable="true">पुष्टि करे</string>
+    <string name="privacy_policy" translatable="true">गोपनीयता नीति</string>
+    <string name="about_us" translatable="true">हमारे बारे में</string>
+    <string name="app_version" translatable="true">एप्लिकेशन वेरीज़न</string>
+    <string name="dashboard" translatable="true">डैशबोर्ड</string>
+    <string name="transaction_history" translatable="true">लेनदेन का विवरण</string>
+    <string name="support" translatable="true">सहयोग</string>
+    <string name="help" translatable="true">मदद</string>
+    <string name="about" translatable="true">एप्प के बारे में</string>
+    <string name="terms_and_conditions" translatable="true">नियम और शर्तें</string>
+    <string name="language" translatable="true">भाषा</string>
+    <string name="communicate" translatable="true">संवाद</string>
+    <string name="share" translatable="true">शेयर</string>
+    <string name="login_or_register" translatable="true">लॉग इन या पंजीकरण करें</string>
+    <string name="mobile_number" translatable="true">मोबाइल नंबर</string>
+    <string name="alternate_mobile_number" translatable="true">वैकल्पिक मोबाइल नंबर</string>
+    <string name="get_OTP" translatable="true">OTP प्राप्त करें</string>
+    <string name="designed_and_developed_by_NICT" translatable="true">डिजाइन और विकसित द्वारा NICT Technologies Pvt. Ltd.</string>
+    <string name="almost_done" translatable="true">लगभग हो गया!</string>
+    <string name="verify" translatable="true">सत्यापित करें</string>
+    <string name="resend_OTP" translatable="true">OTP पुनः भेजें</string>
+    <string name="pay_using" translatable="true">भुगतान विधि चुने</string>
+    <string name="payment_details" translatable="true">भुगतान विवरण</string>
+    <string name="ivrs_no" translatable="true">IVRS नं।</string>
+    <string name="name" translatable="true">नाम</string>
+    <string name="amount" translatable="true">राशि</string>
+    <string name="upi" translatable="true">UPI</string>
+    <string name="no_extra_charges" translatable="true">(कोई अतिरिक्त शुल्क नहीं)</string>
+    <string name="debit_credit_card_net_banking" translatable="true">डेबिट / क्रेडिट कार्ड / नेट बैंकिंग</string>
+    <string name="pay_using_UPI_id" translatable="true">भुगतान का उपयोग UPI ID से</string>
+    <string name="you_will_receive_a_payment_request_on_your_UPI_app" translatable="true">आपको अपने UPI App पर भुगतान का अनुरोध प्राप्त होगा</string>
+    <string name="upi_id" translatable="true">UPI Id</string>
+    <string name="google_pay_BHIM_phonePe_more" translatable="true">Google पे, BHIM, PhonePe और अधिक</string>
+    <string name="enter_your_UPI_ID" translatable="true">अपनी UPI ID डालें</string>
+    <string name="pay_using_apps" translatable="true">भुगतान का उपयोग Apps</string>
+    <string name="you_will_be_redirected_to_your_UPI_app" translatable="true">आपको अपने UPI ऐप पर पुनः निर्देशित किया जाएगा</string>
+    <string name="payment_status" translatable="true">भुगतान की स्थिति</string>
+    <string name="payment_successful" translatable="true">भुगतान सफल</string>
+    <string name="transaction_number" translatable="true">ट्रांसक्शन नम्बर</string>
+    <string name="date" translatable="true">दिनांक</string>
+    <string name="success" translatable="true">सफलता</string>
+    <string name="payment_failed" translatable="true">भुगतान असफल हुआ</string>
+    <string name="try_again" translatable="true">पुनः प्रयास करें</string>
+    <string name="failed" translatable="true">विफल</string>
+    <string name="the_transaction_was_pending" translatable="true">लेन-देन लंबित है</string>
+    <string name="please_contact_us_If_the_amount_has_been_debited_from_your_account" translatable="true">कृपया हमसे संपर्क करें, यदि राशि आपके खाते से डेबिट हो गई है।</string>
+    <string name="transaction_details" translatable="true">लेनदेन का विवरण</string>
+    <string name="service_details" translatable="true">सेवा विवरण</string>
+    <string name="ivrs_number" translatable="true">सर्विस नम्बर</string>
+    <string name="location" translatable="true">स्थान</string>
+    <string name="service" translatable="true">सर्विस</string>
+    <string name="receipt_number" translatable="true">रसीद संख्या</string>
+    <string name="order_id" translatable="true">आर्डर आईडी</string>
+    <string name="convenience_fee" translatable="true">सुविधा शुल्क</string>
+    <string name="download_invoice" translatable="true">इनवाइस को डाउनलोड करो</string>
+    <string name="pay_another_bill" translatable="true">एक और बिल का भुगतान करें</string>
+    <string name="failed_message" translatable="true">विफल संदेश</string>
+    <string name="payment_pending" translatable="true">भुगतान लंबित</string>
+    <string name="payment_method" translatable="true">भुगतान का तरीका</string>
+    <string name="find_IVRS_number" translatable="true">IVRS नम्बर का पता लगाएं</string>
+    <string name="add_IVRS" translatable="true">IVRS जोड़ें</string>
+    <string name="scan_and_pay" translatable="true">स्कैन और पे</string>
+    <string name="add_more_IVRS" translatable="true">अधिक IVRS जोड़ें</string>
+    <string name="confirmation" translatable="true">पुष्टीकरण</string>
+    <string name="email" translatable="true">ईमेल</string>
+    <string name="enter_your_email_for_receipt" translatable="true">रसीद के लिए अपना ईमेल दर्ज करें</string>
+    <string name="cancel" translatable="true">रद्द करना</string>
+    <string name="please_accept_the_request_from_NICT_bills_on_your_UPI_App" translatable="true">कृपया अपने UPI ऐप पर NICT बिल्स के अनुरोध को स्वीकार करें</string>
+    <string name="cancel_payment" translatable="true">भुगतान रद्द करें</string>
+    <string name="MPPKVVCL_bill" translatable="true">MPPKVVCL बिल</string>
+    <string name="electricity_bill" translatable="true">बिजली का बिल</string>
+    <string name="t_and_c" translatable="true">नियम और शर्तें</string>
+    <string name="someting_went_wrong" translatable="true">कुछ गलत हो गया</string>
+    <string name="refer_bill_document_for_IVRS_number" translatable="true">IVRS नम्बर के लिए बिल दस्तावेज देखें</string>
+    <string name="due_date" translatable="true">नियत तारीख</string>
+    <string name="pay_now" translatable="true">भुगतान करें</string>
+    <string name="ivrs_added_successfully" translatable="true">IVRS सफलतापूर्वक जोड़ा गया</string>
+    <string name="ok" translatable="true">ठीक</string>
+    <string name="ivrs_details" translatable="true">IVRS विवरण</string>
+    <string name="address" translatable="true">पता</string>
+    <string name="circle" translatable="true">वृत्त</string>
+    <string name="with_surcharge" translatable="true">सरचार्ज के साथ</string>
+    <string name="enable_camera_access" translatable="true">कैमरा एक्सेस सक्षम करें</string>
+    <string name="enable_your_camera_permission_to_start_scanning_QR_code" translatable="true">कृपया QR कोड स्कैन करना शुरू करने के लिए अपने कैमरे की अनुमति सक्षम करें</string>
+    <string name="enable_camera" translatable="true">कैमरा सक्षम करें</string>
+    <string name="permission_required" translatable="true">अनुमति आवश्यक है</string>
+    <string name="allow_all_required_permission_to_access_NICT_Bills" translatable="true">NICT बिल्स का उपयोग करने के लिए सभी आवश्यक अनुमति दें</string>
+    <string name="enable_access" translatable="true">पहुंच सक्षम करें</string>
+    <string name="fee" translatable="true">शुल्क</string>
+    <string name="convenience_fee_will_be_charged_depending_on_your_choice_of_payment_method" translatable="true">आपकी भुगतान पद्धति के आधार पर सुविधा शुल्क लिया जाएगा।</string>
+    <string name="for_any_queries_please_contact_us_at" translatable="true">किसी भी प्रश्न के लिए कृपया हमसे संपर्क करें</string>
+    <string name="call_us" translatable="true">कॉल करें</string>
+    <string name="email_us" translatable="true">ईमेल करे</string>
+    <string name="no_transaction" translatable="true">कोई लेन-देन नहीं</string>
+    <string name="you_haven_made_any_transaction_yet" translatable="true">आपने अभी तक कोई लेन-देन नहीं किया है</string>
+    <string name="scan_IVRS_QR_from_the_meter" translatable="true">IVRS QR को मीटर से स्कैन करें और अपने बिल का भुगतान करें</string>
+    <string name="vaccine_finder" translatable="true">वैक्सीन फाइंडर</string>
+    <string name="mobile_recharge" translatable="true">मोबाइल रिचार्ज</string>
+    <string name="dth_recharge" translatable="true">डीटीएच रिचार्ज</string>
+    <string name="msbm_name" translatable="true">MSBM</string>
+    <string name="full_msbm_name" translatable="true">मेट्रोपॉलिटन स्कूल बिजनेस एंड मैनेजमेंट</string>
+    <string name="select_subject" translatable="true">विषय चुनें</string>
+    <string name="course_categories" translatable="true">पाठ्यक्रम श्रेणियां</string>
+    <string name="search" translatable="true">खोज</string>
+    <string name="no_category_match" translatable="true">यह विषय इस श्रेणी में उपलब्ध नहीं है किसी अन्य श्रेणी का चयन करें</string>
+    <string name="regis_login_for_vaccine" translatable="true">टीकाकरण के लिए रजिस्टर या लॉगिन करें</string>
+    <string name="COVID_vaccine_slot_finder" translatable="true">COVID-19 वैक्सीन स्लॉट फाइंडर</string>
+    <string name="book_directly_on_NICT_bills" translatable="true">सीधे एनआईसीटी बिलों पर बुक करें</string>
+    <string name="you_can_now_book_your_vaccine_slot_on_NICT_Bills" translatable="true">अब आप अपना वैक्सीन स्लॉट एनआईसीटी बिलों पर बुक कर सकते हैं</string>
+    <string name="select_your_photo_id" translatable="true">अपनी फोटो आईडी चुनें</string>
+    <string name="add_new_bene" translatable="true">नया लाभार्थी जोड़ें</string>
+    <string name="photo_proof_details" translatable="true">आपकी टीकाकरण नियुक्ति के समय आपकी फोटो आईडी का सत्यापन किया जाएगा। कृपया उस फोटो आईडी का विवरण प्रदान करें जिसे आप टीकाकरण के लिए ले जाएंगे।</string>
+    <string name="select_gender" translatable="true">कृपया लिंग चुनें</string>
+    <string name="proof_Id_number" translatable="true">प्रूफ आईडी नंबर</string>
+    <string name="beneficiary_name_photo_Id_card" translatable="true">फोटो आईडी कार्ड के अनुसार लाभार्थी का नाम</string>
+    <string name="year_of_birth" translatable="true">जन्म का साल (YYYY)</string>
+    <string name="gender" translatable="true">लिंग</string>
+    <string name="already_registered_or_cannot_register" translatable="true">पहले से पंजीकृत है या एक मोबाइल नंबर के साथ 4 से अधिक व्यक्तियों को पंजीकृत नहीं कर सकता है।</string>
+    <string name="kindly_select_your_photo_Id" translatable="true">कृपया अपना फोटो आईडी चुनें</string>
+    <string name="kindly_enter_your_photo_Id_number" translatable="true">कृपया अपना फोटो आईडी नंबर दर्ज करें</string>
+    <string name="kindly_enter_the_name" translatable="true">कृपया फोटो आईडी कार्ड के अनुसार एक नाम दर्ज करें</string>
+    <string name="kindly_enter_birth_year" translatable="true">कृपया जन्म वर्ष दर्ज करें</string>
+    <string name="kindly_enter_correct_birth_year" translatable="true">कृपया सही जन्म वर्ष दर्ज करें (YYYY)</string>
+    <string name="kindly_select_gender" translatable="true">कृपया लिंग चुनें</string>
+    <string name="beneficiary_list" translatable="true">लाभार्थी सूची</string>
+    <string name="pincode_required" translatable="true">कृपया वैध पिन कोड दर्ज करें</string>
+    <string name="operator_circle" translatable="true">ऑपरेटर</string>
+    <string name="enter_plan_amount" translatable="true">प्लान राशि दर्ज करें</string>
+    <string name="view_plans" translatable="true">प्लान देखें</string>
+    <string name="covin_rule" translatable="true">वैक्सीन बुकिंग प्रवाह को-विन द्वारा अनुमोदित है। हम अपने सिस्टम पर किसी भी बुकिंग-संबंधित उपयोगकर्ता डेटा को संग्रहीत नहीं करते हैं।</string>
+    <string name="select_operator_circle" translatable="true">कृपया ऑपरेटर का चयन करें</string>
+    <string name="enter_recharge_amount" translatable="true">रिचार्ज राशि दर्ज करें</string>
+    <string name="bill_payment_successful_mobile_number">मोबाइल नंबर का रिचार्ज सफल</string>
+    <string name="bill_payment_failed_of_mobile_number">मोबाइल नंबर का रिचार्ज फेल</string>
+    <string name="bill_payment_failed_of_dth_number">डीटीएच नंबर का रिचार्ज फेल</string>
+    <string name="bill_payment_failed_of_lic_number">LIC नंबर का रिचार्ज फेल</string>
+    <string name="bill_payment_successful_dth_number">डीटीएच नंबर का रिचार्ज सफल</string>
+    <string name="bill_payment_successful_lic_number">LIC नंबर का रिचार्ज सफल</string>
+    <string name="customer_id">डीटीएच आईडी</string>
+    <string name="select_operator">ऑपरेटर का चयन करें</string>
+    <string name="enter_amount">राशी</string>
+    <string name="operator">ऑपरेटर का चयन करें</string>
+    <string name="enter_dth_customer_id" translatable="true">ग्राहक आईडी दर्ज करें</string>
+    <string name="rewards_points" translatable="true">रिवॉर्ड पॉइंट</string>
+    <string name="total_balance" translatable="true">कुल रिवॉर्ड बैलेंस</string>
+    <string name="reward_details" translatable="true">इनाम शेष विवरण</string>
+    <string name="added" translatable="true">जोड़ा</string>
+    <string name="paid" translatable="true">भुगतान</string>
+    <string name="no_rewards" translatable="true">कोई पुरस्कार नहीं</string>
+    <string name="description" translatable="true">विवरण</string>
+    <string name="transaction_id" translatable="true">लेन-देन आईडी </string>
+    <string name="on" translatable="true">पर </string>
+    <string name="point" translatable="true">पॉइन्ट</string>
+    <string name="amount_pay" translatable="true">भुगतान राशि</string>
+    <string name="lic_premium" translatable="true">LIC प्रीमियम</string>
+    <string name="policy_number" translatable="true">पॉलिसी नंबर</string>
+    <string name="email_id" translatable="true">ईमेल आईडी</string>
+    <string name="enter_policy_number" translatable="true">पॉलिसी नंबर दर्ज करें</string>
+    <string name="enter_email_id" translatable="true">ईमेल आईडी दर्ज करें</string>
+    <string name="LIC_premium_bill_not_generated" translatable="true">एलआईसी प्रीमियम बिल जनरेट नहीं हुआ</string>
+    <string name="user_name" translatable="true">नाम</string>
+    <string name="details" translatable="true">विवरण</string>
+    <string name="nict_arogyam" translatable="true">NICT आरोग्यम</string>
+    <string name="book_covid_vaccine" translatable="true">बुक कोविड वैक्सीन</string>
+    <string name="download_certificate" translatable="true">प्रमाणपत्र डाउनलोड</string>
+    <string name="cowin_certificate" translatable="true">CoWIN सर्टिफिकेट</string>
+    <string name="enter_valid_email" translatable="true">मान्य ईमेल दर्ज करें!</string>
+    <string name="you_can_now_book_your_vaccine_slot" translatable="true">अब आप अपना वैक्सीन स्लॉट एनआईसीटी बिलों पर बुक कर सकते हैं</string>
+    <string name="create_your_ABHA" translatable="true">अपना ABHA बनाएं</string>
+    <string name="the_first_step_to_creating_safer_and_more_efficient_digital_health" translatable="true">ABHA (आयुष्मान भारत स्वास्थ्य खाता) आपके और आपके परिवार के लिए सुरक्षित और अधिक कुशल डिजिटल स्वास्थ्य रिकॉर्ड बनाने की दिशा में पहला कदम है।</string>
+    <string name="create_health_id" translatable="true">ABHA बनाएं</string>
+    <string name="abha" translatable="true">ABHA</string>
+    <string name="enter_aadhar_number" translatable="true">आधार कार्ड नंबर दर्ज करें</string>
+    <string name="enter_otp" translatable="true">OTP दर्ज करें</string>
+    <string name="mobile_number_verification" translatable="true">मोबाइल नंबर सत्यापन</string>
+    <string name="enter_the_mobile_number_you_want_to_link_with_this_ABHA_account" translatable="true">वह मोबाइल नंबर दर्ज करें जिसे आप इस आभा खाते से जोड़ना चाहते हैं</string>
+    <string name="continue_btn" translatable="true">जारी रखें</string>
+    <string name="we_have_pre_filled_mobile_number" translatable="true">We have pre-filled your NICT Bills and Services mobile number</string>
+    <string name="set_your_ABHA_address" translatable="true">अपना ABHA पता सेट करें</string>
+    <string name="self_declared_username" translatable="true">ABHA पता एक स्व-घोषित उपयोगकर्ता नाम है जिसका उपयोग आपके ABHA खाते में लॉगिन करने के लिए किया जाता है</string>
+    <string name="abha_number" translatable="true">ABHA संख्या</string>
+    <string name="abha_address" translatable="true">ABHA पता</string>
+    <string name="kindly_mentioned_abha_address" translatable="true">कृपया ABHA पते का उल्लेख करें</string>
+    <string name="abha_card" translatable="true">ABHA कार्ड</string>
+    <string name="copy" translatable="true">कापी</string>
+    <string name="add_member" translatable="true">सदस्य जोड़ें</string>
+    <string name="anyone_can_scan_this_health_records" translatable="true">कोई भी इस QR को स्कैन कर सकता है और आपकी सहमति से आपके स्वास्थ्य रिकॉर्ड तक पहुंचने का अनुरोध कर सकता है</string>
+    <string name="abha_address_copied" translatable="true">ABHA पता कॉपी किया गया</string>
+    <string name="invalid_aadhaar_number_entered" translatable="true">अमान्य आधार संख्या दर्ज की गई। कृपया एक मान्य आधार संख्या दर्ज करें।</string>
+    <string name="download_ABHA_card" translatable="true">ABHA कार्ड डाउनलोड करें</string>
+    <string name="credit_score" translatable="true">क्रेडिट स्कोर</string>
+    <string name="circle_state" translatable="true">सर्कल</string>
+    <string name="personal_details" translatable="true">व्यक्तिगत विवरण</string>
+    <string name="full_name" translatable="true">पूरा नाम</string>
+    <string name="year_of_birth_abha" translatable="true">जन्म का साल</string>
+    <string name="profile" translatable="true">प्रोफ़ाइल</string>
+    <string name="edit" translatable="true">एडिट</string>
+    <string name="enter_mobile_number" translatable="true">मोबाइल नंबर दर्ज करें</string>
+    <string name="kindly_select_circle_state" translatable="true">कृपया सर्कल का चयन करें</string>
+    <string name="household_services" translatable="true">घरेलू सेवाएं</string>
+    <string name="enter_pincode" translatable="true">पिन कोड</string>
+    <string name="user_state" translatable="true">राज्य</string>
+    <string name="user_city" translatable="true">शहर</string>
+    <string name="abha_manager" translatable="true">आभा प्रबंधक</string>
+    <string name="abha_login" translatable="true">लॉग इन करें</string>
+    <string name="health_id_number" translatable="true">स्वास्थ्य आईडी संख्या</string>
+    <string name="kindly_enter_your_full_name" translatable="true">कृपया अपना पूरा नाम दर्ज करें</string>
+    <string name="kindly_select_state" translatable="true">कृपया राज्य का चयन करें</string>
+    <string name="kindly_select_city" translatable="true">कृपया शहर का चयन करें</string>
+    <string name="kindly_enter_address" translatable="true">कृपया पता दर्ज करें</string>
+    <string name="dawai4u" translatable="true">दवाई4u</string>
+    <string name="chemists" translatable="true">दवा की दुकानों</string>
+    <string name="age" translatable="true">आयु</string>
+    <string name="state" translatable="true">राज्य</string>
+    <string name="upload_prescription" translatable="true">प्रिस्क्रिप्शन अपलोड करें</string>
+    <string name="kindly_enter_age" translatable="true">कृपया उम्र दर्ज करें</string>
+    <string name="kindly_enter_state" translatable="true">कृपया राज्य दर्ज करें</string>
+    <string name="kindly_upload_prescription" translatable="true">कृपया नुस्खे अपलोड करें</string>
+    <string name="male" translatable="true">पुरुष</string>
+    <string name="female" translatable="true">महिला</string>
+    <string name="book_medicine">बुक मेडिसिन</string>
+    <string name="order_history">आर्डर हिस्ट्री</string>
+    <string name="contact_us">संपर्क करें</string>
+    <string name="order_submitted">आर्डर जमा किया</string>
+    <string name="order_status">आर्डर की स्थिति</string>
+    <string name="have_a_referral_code">रेफरल कोड है?</string>
+    <string name="enter_referral_code">रेफरल कोड दर्ज करें</string>
+    <string name="referral_code">रेफरल कोड</string>
+    <string name="use_my_referral_code">हे, साइन करते समय मेरे रेफ़रल कोड का उपयोग करें और आकर्षक रिवॉर्ड पॉइंट प्राप्त करें।</string>
+    <string name="capacity">क्षमता</string>
+    <string name="vendor_details">विक्रेता विवरण</string>
+    <string name="category">श्रेणी</string>
+    <string name="container_type">कंटेनर प्रकार</string>
+    <string name="more_details">अधिक जानकारी</string>
+    <string name="select_water_category">चयन पानी श्रेणी</string>
+    <string name="paniwala">पानीवाला</string>
+    <string name="subscribe_to_NICT_Bills">NICT बिलों और सेवाओं के लिए सदस्यता लें</string>
+    <string name="premium_experience">प्रीमियम अनुभव</string>
+    <string name="months_plan">12 महीने की योजना</string>
+    <string name="Enjoy_NICT_Bills_and_Services_premium_experience">NICT बिलों और सेवाओं के प्रीमियम अनुभव का आनंद लें</string>
+    <string name="no_vendor_available_in_your_area">आपके क्षेत्र में कोई विक्रेता उपलब्ध नहीं है</string>
+    <string name="no_capacity_available">क्षमता नहीं मिली किसी अन्य विक्रेता को चुनने का प्रयास करें</string>
+    <string name="enter_ABHA_Number_ABHA_address">आभा नंबर या आभा पता दर्ज करें</string>
+    <string name="abha_address_abha_number" translatable="true">आभा नंबर या आभा पता</string>
+    <string name="or" translatable="true">या</string>
+    <string name="login_with_mobile_number" translatable="true">मोबाइल नंबर से वेरीफाई करें</string>
+    <string name="verify_with_ABHA_number_ABHA_address" translatable="true">ABHA नंबर या ABHA पते से पुष्टि करें</string>
+    <string name="ABHA_user_status" translatable="true">ABHA उपयोगकर्ता विवरण</string>
+    <string name="verify_ABHA" translatable="true">ABHA सत्यापित करें</string>
+    <string name="OTP_will_be_sent_to_the_mobile_no" translatable="true">आप आधार का उपयोग करके तुरंत अपना आभा नंबर बना सकते हैं। कृपया सुनिश्चित करें कि आधार एक मोबाइल नंबर से जुड़ा हुआ है क्योंकि एक ओटीपी प्रमाणीकरण का पालन किया जाएगा। यदि आपके पास मोबाइल नंबर लिंक नहीं है, तो निकटतम ABDM सहभागी सुविधा पर जाएँ और सहायता प्राप्त करें।</string>
+    <string name="i_have_read_the_disclaimer_and_agree" translatable="true">मैंने अस्वीकरण पढ़ लिया है और नियम और शर्तों से सहमत हूं</string>
+    <string name="the_disclaimer_and_agree" translatable="true">अस्वीकरण और नियम और शर्तें</string>
+    <string name="please_enter_a_correct_aadhaar_number" translatable="true">कृपया सही आधार नंबर दर्ज करें</string>
+    <string name="please_accept_terms_and_conditions" translatable="true">कृपया नियम और शर्तें स्वीकार करें</string>
+    <string name="digilocker" translatable="true">डिजिटल लॉकर</string>
+    <string name="you_have_requested_multiple_in_this_transaction" translatable="true">आपने इस लेनदेन में कई ओटीपी का अनुरोध किया है। कृपया 30 मिनट में पुन: प्रयास करें।</string>
+    <string name="we_just_sent_an_OTP_on_the_mobile_number" translatable="true">हमने अभी मोबाइल नंबर पर एक ओटीपी भेजा है</string>
+    <string name="linked_with_your_aadhaar" translatable="true">आपके आधार से लिंक</string>
+    <string name="otp_sent_to_the_mobile_number_registered_with_aadhaar" translatable="true">आधार के साथ पंजीकृत मोबाइल नंबर पर भेजा गया ओटीपी</string>
+    <string name="no_user_account_can_be_found_with_the_ABHA_Number" translatable="true">दिए गए ABHA नंबर/पते के साथ कोई उपयोगकर्ता खाता नहीं मिल सकता है।</string>
+    <string name="no_user_account_can_be_found_with_the_mobile_number" translatable="true">मोबाइल नंबर के साथ कोई उपयोगकर्ता खाता नहीं मिल सकता है</string>
+    <string name="back" translatable="true">बैक</string>
+    <string name="enter_ABHA_Address_ABHA_Number" translatable="true">ABHA पता या ABHA संख्या दर्ज करें</string>
+    <string name="no_user_account_can_be_found_with_the_mobile_number_provided" translatable="true">दिए गए मोबाइल नंबर से कोई उपयोगकर्ता खाता नहीं मिल सकता है।</string>
+    <string name="your_request_submitted_successfully" translatable="true">आपका अनुरोध सफलतापूर्वक सबमिट किया गया</string>
+    <string name="fastag" translatable="true">फास्टैग</string>
+    <string name="recharge_bill_payments" translatable="true">रिचार्ज और बिल भुगतान</string>
+    <string name="health" translatable="true">स्वास्थ्य</string>
+    <string name="services" translatable="true">सेवाएं</string>
+    <string name="education_and_profile" translatable="true">शिक्षा और प्रोफ़ाइल</string>
+    <string name="ticket_booking" translatable="true">टिकट बुकिंग</string>
+    <string name="flight_ticket" translatable="true">उड़ान टिकट</string>
+    <string name="bus_tickets" translatable="true">बस टिकट</string>
+    <string name="train_tickets" translatable="true">रेल टिकट</string>
+    <string name="hotel_booking" translatable="true">होटल बुकिंग</string>
+    <string name="enter_origin" translatable="true">मूल दर्ज करें</string>
+    <string name="enter_destination" translatable="true">गंतव्य दर्ज करें</string>
+    <string name="depart" translatable="true">रवाना होना</string>
+    <string name="credit" translatable="true">क्रेडिट शेल पीएनआर</string>
+    <string name="returnss">वापस करना</string>
+    <string name="oneways">एक तरफ़ा रास्ता</string>
+    <string name="filters">फ़िल्टर</string>
+    <string name="emails">ईमेल</string>
+    <string name="first_name">पहला नाम</string>
+    <string name="last_name">उपनाम</string>
+    <string name="mobile_no">मोबाइल नंबर</string>
+    <string name="push_booking">रोमर के लिए बुकिंग पुश करें</string>
+    <string name="booknow" translatable="true">अभी बुक करें</string>
+    <string name="emailflight" translatable="true">ईमेल</string>
+    <string name="passenger" translatable="true">यात्री</string>
+    <string name="country" translatable="true">देश :</string>
+    <string name="bookingDeatails" translatable="true">बुकिंग विवरण</string>
+    <string name="flightInformation" translatable="true">उड़ान की जानकारी</string>
+    <string name="passengerinformation" translatable="true">यात्री सूचना</string>
+    <string name="roamer" translatable="true">रोमर</string>
+    <string name="flightno" translatable="true">विमान संख्या</string>
+    <string name="origin" translatable="true">मूल</string>
+    <string name="destination" translatable="true">गंतव्य</string>
+    <string name="departdateandtime" translatable="true">प्रस्थान तिथि और समय</string>
+    <string name="arrvedateandtime" translatable="true">आगमन तिथि और समय
+</string>
+    <string name="contactmobile" translatable="true">ग्राहक मोबाइल नंबर</string>
+    <string name="hold" translatable="true">पकड़</string>
+    <string name="ticket" translatable="true">टिकट</string>
+    <string name="country1" translatable="true">देश</string>
+    <string name="flightnmae" translatable="true">उड़ान का नाम</string>
+    <string name="farerules" translatable="true">किराए का नियम</string>
+    <string name="noassistance">कोई सहायता और बीमा की आवश्यकता नहीं</string>
+    <string name="hotelentrycityhotel">शहर या होटल का नाम दर्ज करें</string>
+    <string name="checkin">आगमन</string>
+    <string name="checkout">निर्गम</string>
+    <string name="night">रात्रि</string>
+    <string name="rooms">रूमस</string>
+    <string name="nationality">राष्ट्रीयता</string>
+    <string name="adaults">वयस्क(+18)</string>
+    <string name="child">बच्‍चों(0-12)</string>
+    <string name="startrating">स्टार समीक्षा</string>
+    <string name="hotelsearch">होटल खोजे</string>
+    <string name="seatreserved">यह सीट आरक्षित है। कृपया अन्य का चयन करें</string>
+    <string name="price">कीमत</string>
+    <string name="seatno">सीट संख्या</string>
+    <string name="seatprefrence">सीट वरीयताएँ</string>
+    <string name="terms">अवधि और स्थितियाँ: </string>
+    <string name="termsmsg">मैंने इस बुकिंग के लिए ऑफ़र किए जाने वाले किराए और कमीशन की समीक्षा कर ली है और मैं इससे सहमत हूं।</string>
+    <string name="payment">भुगतान</string>
+    <string name="onlinepayment">ऑनलाइन भुगतान</string>
+    <string name="payusing">क्रेडिट कार्ड का उपयोग करके भुगतान करें</string>
+    <string name="bussearch">बस खोजे</string>
+    <string name="from"> आरंभ</string>
+    <string name="to"> गंतव्य</string>
+    <string name="pincode">पिन कोड:</string>
+    <string name="fax">फैक्स:</string>
+    <string name="contact">संपर्क करना:</string>
+    <string name="hotelimage">होटल की तस्वीर</string>
+    <string name="hotelpolicy">होटल नीति</string>
+    <string name="hotelfacility">होटल सुविधाएँ</string>
+    <string name="addhotelmember" translatable="true">सदस्य विवरण जोड़ें</string>
+    <string name="add" translatable="true">जोड़ें</string>
+    <string name="hotelnorms" translatable="true">होटल मानदंड</string>
+    <string name="hotelroomstype" translatable="true">कमरे का प्रकार</string>
+    <string name="noofguest" translatable="true">अतिथियों की संख्या</string>
+    <string name="pbooking" translatable="true">बुकिंग के लिए आगे बढ़ें</string>
+    <string name="bookingsummary" translatable="true"> सारांश</string>
+    <string name="select" translatable="true"> चुनना</string>
+    <string name="busviewseat">सीट देखें</string>
+    <string name="businfo" translatable="true">बस जानकारी</string>
+    <string name="busname" translatable="true">ट्रेवल्स नाम </string>
+    <string name="busblockconti" translatable="true">बस ब्लॉक करें और जारी रखें</string>
+    <string name="farerules1">किराया नियम और उद्धरण</string>
+    <string name="fsearch" translatable="true">उड़ान खोजे</string>
+    <string name="fviewhistory" translatable="true"> इतिहास देखे</string>
+    <string name="busproceedbooking" translatable="true">बुकिंग के लिए आगे बढ़ें</string>
+    <string name="searchbus" translatable="true">खोजे</string>
+    <string name="datanot" translatable="true">डेटा नहीं मिला!</string>
+    <string name="boooked" translatable="true">बुक्ड</string>
+    <string name="selected" translatable="true">चुना गया</string>
+    <string name="unselected" translatable="true">नहीं चुना </string>
+    <string name="ladies" translatable="true">महिलाएं</string>
+    <string name="seats" translatable="true">सीटें</string>
+    <string name="amounttbo" translatable="true">राशि:</string>
+    <string name="selectbpoint" translatable="true">बोर्डिंग प्वाइंट का चयन करें</string>
+    <string name="selectdpoint" translatable="true">ड्रॉपिंग पॉइंट्स का चयन करें</string>
+    <string name="travelname" translatable="true">ट्रैवेलर नाम:</string>
+    <string name="seatprice" translatable="true">सीट मूल्य:</string>
+    <string name="totalseatprice" translatable="true">कुल मूल्य:</string>
+    <string name="total" translatable="true">कुल</string>
+    <string name="gtotal" translatable="true">ग्रैंड कुल</string>
+    <string name="bconfrimation" translatable="true">बुकिंग की पुष्टि"</string>
+    <string name="travlername" translatable="true">ट्रैवेलर नाम</string>
+    <string name="busid" translatable="true">बस आईडी</string>
+    <string name="bordingname" translatable="true">बोर्डिंग प्वाइंट</string>
+    <string name="dropingname" translatable="true">ड्रॉपिंग प्वाइंट</string>
+    <string name="orderid" translatable="true">आर्डर नंबर </string>
+    <string name="ticketno" translatable="true">टिकट संख्या</string>
+    <string name="invoiceno" translatable="true">चालान नंबर</string>
+    <string name="travelpnr" translatable="true">यात्रा पीएनआर</string>
+    <string name="homeBACK" translatable="true">मुखपृष्ठ पर वापस</string>
+    <string name="status" translatable="true">स्थति</string>
+    <string name="panno" translatable="true">पैन नं</string>
+    <string name="isleadbus" translatable="true">लीडपैसेंजर है?</string>
+    <string name="avilability" translatable="true">उपलब्धता</string>
+    <string name="hotelinfo" translatable="true">होटल की जानकारी</string>
+    <string name="hotelname" translatable="true">होटल का नाम</string>
+    <string name="roomtype" translatable="true">कमरे के प्रकार:</string>
+    <string name="roomdesc" translatable="true">कक्ष विवरण:</string>
+    <string name="roomprice" translatable="true">:कमरे की कीमत</string>
+    <string name="noofnight" translatable="true">रात की संख्या:</string>
+    <string name="addchildage" translatable="true">बाल आयु जोड़ें</string>
+    <string name="hotelcode" translatable="true">होटल कोड</string>
+    <string name="bookingid" translatable="true">किंग आईडी</string>
+    <string name="bookingref" translatable="true">बुकिंग संदर्भ सं</string>
+    <string name="bconfirmno" translatable="true">सत्यापन क्रमांक</string>
+    <string name="panmandtory" translatable="true">नोट: पहला नाम और उपनाम को पैनकार्ड से मैच करना चाहिए</string>
+    <string name="addchild" translatable="true">बच्चे जोड़ें</string>
+    <string name="ticketcancel" translatable="true">टिकट रद्द</string>
+
+
+
+    //
+    <string name="addadult" translatable="true">वयस्क जोड़ें</string>
+
+
+    //FARM
+    <string name="farm_equipment" translatable="true">कृषि उपकरण</string>
+    <string name="farm_newrequest" translatable="true">नई विनती</string>
+    <string name="farmbooked" translatable="true">अभी बुक करें</string>
+    <string name="farmnext" translatable="true">जारी रखनां</string>
+
+    <string name="funame" translatable="true">प्रथम नाम</string>
+    <string name="flname" translatable="true">उपनाम</string>
+    <string name="femail" translatable="true">ईमेल</string>
+    <string name="faddress" translatable="true">पूरा पता</string>
+    <string name="ffillinfo" translatable="true">जानकारी भरें !</string>
+    <string name="fgender" translatable="true">लिंग</string>
+    <string name="fmale" translatable="true">पुरुष</string>
+    <string name="ffemale" translatable="true">महिला</string>
+    <string name="fsubmit" translatable="true">जानकारी ऐड करे!</string>
+    <string name="fMOBILE" translatable="true">मोबाइल</string>
+    <string name="fselect" translatable="true">समय का चयन करें!</string>
+    <string name="frentdtl" translatable="true">किराया विवरण!</string>
+    <string name="frent" translatable="true">प्रति घंटा किराया !</string>
+    <string name="fcity" translatable="true">शहर या ग्राम </string>
+    <string name="fordersummary" translatable="true">प्री बुकिंग विवरण</string>
+    <string name="farm_equipment1" translatable="true">कृषि उपकरण:</string>
+    <string name="ftimeselected" translatable="true">चयनित समय:</string>
+    <string name="frentone" translatable="true"> किराया :</string>
+    <string name="ftotal" translatable="true"> कुल :</string>
+    <string name="fcutmerdtl" translatable="true"> ग्राहक विवरण :</string>
+    <string name="fbacktodash" translatable="true">डैशबोर्ड पर वापस</string>
+    <string name="fbookconfm" translatable="true">बुकिंग की पुष्टि</string>
+    <string name="fbookingdatetime" translatable="true">बुकिंग की तारीख समय</string>
+    <string name="fbookingid" translatable="true">बुकिंग आईडी</string>
+    <string name="forderid" translatable="true">आदेश आईडी</string>
+    <string name="forderprice" translatable="true">राशि</string>
+    <string name="fcMOBILE" translatable="true">ग्राहक मोबाइल</string>
+    <string name="fproductid" translatable="true">उत्पाद आयडी</string>
+    <string name="fproductrental" translatable="true">किराये का समय</string>
+    <string name="forderdate" translatable="true">ऑर्डर की तारीख</string>
+    <string name="fordersttaus" translatable="true">ऑर्डर की स्थिति</string>
+
+
+    //bloodlabtest
+    <string name="lab_test" translatable="true">लैब टेस्ट</string>
+
+</resources>

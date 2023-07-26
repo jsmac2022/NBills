@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:padding="5dp"
+        android:background="@drawable/white_border_button"
+        android:orientation="horizontal">
+
+
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/dawai_logo"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/full_name"
+                    android:layout_gravity="center"
+                    android:textSize="12dp"/>
+
+                <TextView
+                    android:id="@+id/user_name_TV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/full_name"
+                    android:textColor="#000"
+                    android:gravity="right"
+                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                    android:textSize="13dp"/>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/mobile_number"
+                    android:layout_gravity="center"
+                    android:textSize="12dp"/>
+
+
+                <TextView
+                    android:id="@+id/mobile_number_Tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/mobile_number"
+                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                    android:gravity="right"
+                    android:textColor="#000"
+                    android:textSize="13dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/chemists"
+                    android:layout_gravity="center"
+                    android:textSize="12dp"/>
+
+
+                <TextView
+                    android:id="@+id/chemist_shop_name_Tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/date"
+                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                    android:gravity="right"
+                    android:textColor="#000"
+                    android:textSize="13dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/date"
+                    android:layout_gravity="center"
+                    android:textSize="12dp"/>
+
+
+                <TextView
+                    android:id="@+id/order_date_Tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/date"
+                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                    android:gravity="right"
+                    android:textColor="#000"
+                    android:textSize="13dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/linear_layout_customborder"
+                android:padding="5dp"
+                android:layout_margin="10dp"
+                android:layout_gravity="right"
+                android:gravity="center"
+                android:orientation="vertical">
+
+
+
+                <TextView
+                    android:id="@+id/order_status_TV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Status"
+                    android:textStyle="bold"
+                    android:textSize="15dp"
+
+                    android:textColor="#000"/>
+
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+
+
+
+
+    </LinearLayout>
+
+
+
+
+
+
+</LinearLayout>

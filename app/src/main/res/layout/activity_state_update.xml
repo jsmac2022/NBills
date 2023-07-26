@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <ImageView
+        android:id="@+id/creditScore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        app:srcCompat="@drawable/ic_creditscore" />
+
+    <TextView
+        android:id="@+id/know"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/creditScore"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/gotham_bold"
+        android:text="Know Your"
+        android:textColor="@color/darkslategray"
+        android:textSize="24sp" />
+
+    <LinearLayout
+        android:id="@+id/linear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/know"
+
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/score"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/creditScore"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="-5dp"
+            android:fontFamily="@font/gotham_bold"
+            android:text="Score"
+            android:textColor="@color/darkslategray"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/instantly"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/creditScore"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="-5dp"
+            android:fontFamily="@font/gotham_bold"
+            android:text="Instantly"
+            android:textColor="@color/lightseagreen"
+            android:textSize="24sp" />
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/weNeed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/linear"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/gotham_book_regular"
+        android:justificationMode="inter_word"
+        android:text="@string/tag_line_2"
+        android:textAlignment="center" />
+    <TextView
+        android:id="@+id/state"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/weNeed"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/gotham_book_regular"
+        android:text="State"
+        android:textColor="@color/darkslategray"
+        android:textSize="16sp" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/carview_state"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@id/state"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="100dp"
+        android:layout_marginBottom="10dp"
+        app:cardCornerRadius="5dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#F1F1F1"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <com.nictbills.app.activities.credit_score.Spinner.CustomSpinner
+                android:id="@+id/state_spinner"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/stroke">
+
+            </com.nictbills.app.activities.credit_score.Spinner.CustomSpinner>
+
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/city"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/carview_state"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/gotham_book_regular"
+        android:text="City"
+        android:textColor="@color/darkslategray"
+        android:textSize="16sp" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/carview_city"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@id/city"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="100dp"
+        android:layout_marginBottom="10dp"
+        app:cardCornerRadius="5dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#F1F1F1"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <com.nictbills.app.activities.credit_score.Spinner.CustomSpinner
+                android:id="@+id/city_spinner"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/stroke">
+
+            </com.nictbills.app.activities.credit_score.Spinner.CustomSpinner>
+
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/Update"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/carview_city"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/proceed_bg"
+        android:fontFamily="@font/gotham_medium"
+        android:gravity="center_horizontal"
+        android:paddingVertical="10dp"
+        android:text="Update &amp; Submit"
+        android:textColor="@color/white" />
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/new_small"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_below="@id/carview_city"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="20dp"
+        android:visibility="gone"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/small_loader"/>
+
+
+</RelativeLayout>

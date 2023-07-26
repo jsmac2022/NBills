@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#fff"
+    tools:context=".activities.MSBM_Course_SelectActivity">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+     <ImageView
+         android:layout_width="200dp"
+         android:layout_height="150dp"
+         android:layout_marginTop="-15dp"
+         android:src="@drawable/msbm_logo"
+         android:layout_gravity="center"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+       android:layout_marginLeft="10dp"
+        android:layout_marginTop="-10dp"
+        android:layout_marginRight="10dp"
+        >
+
+
+        <com.chivorn.smartmaterialspinner.SmartMaterialSpinner
+            android:id="@+id/subject_type_spinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:smsp_floatingLabelColor="#393737"
+            app:smsp_floatingLabelText="@string/select_subject"
+            app:smsp_searchHeaderText="@string/select_subject"
+            app:smsp_searchHeaderBackgroundColor="#2196F3"
+            app:smsp_hint="@string/select_subject"
+            android:layout_marginLeft="2dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="-10dp"
+            app:smsp_isSearchable="true"
+            app:smsp_hintColor="#000000"
+            app:smsp_itemColor="#6C6666"
+            app:smsp_itemListColor="#6C6666"
+            app:smsp_selectedItemListColor="#4CAF50" />
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        >
+
+
+        <com.chivorn.smartmaterialspinner.SmartMaterialSpinner
+            android:id="@+id/category_type_spinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:smsp_floatingLabelColor="#393737"
+            app:smsp_floatingLabelText="@string/course_categories"
+            app:smsp_searchHeaderText="@string/course_categories"
+            app:smsp_searchHeaderBackgroundColor="#2196F3"
+            app:smsp_hint="@string/course_categories"
+            android:layout_marginLeft="2dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="-10dp"
+            app:smsp_isSearchable="true"
+            app:smsp_hintColor="#000000"
+            app:smsp_itemColor="#6C6666"
+            app:smsp_itemListColor="#6C6666"
+            app:smsp_selectedItemListColor="#4CAF50" />
+
+
+    </LinearLayout>
+
+
+        <Button
+            android:id="@+id/course_search_Button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="@string/search"
+            android:textColor="#fff" />
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:visibility="gone"
+        android:id="@+id/no_category_match_linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/no_category_match"
+            android:textColor="#E44444"
+            android:textSize="15dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_margin="10dp"/>
+
+
+    </LinearLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:visibility="gone"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/idNestedSV"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
+
+        <!--linear layout for displaying
+            our recycler view-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <!--recycler view for displaying our list of data
+                and we are making nested scroll for our
+                recycler view as false-->
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/idRVUsers"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:nestedScrollingEnabled="false"
+                tools:listitem="@layout/course_show_card" />
+
+            <!--we are adding progress bar
+                for the purpose of loading-->
+            <ProgressBar
+                android:id="@+id/idPBLoading"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</LinearLayout>

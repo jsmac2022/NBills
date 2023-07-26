@@ -1,0 +1,704 @@
+<?xml version="1.0" encoding="utf-8"?><!--<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".activities.tbo.hotel.HotelDashBoardActivity">
+
+        <RelativeLayout
+            android:id="@+id/toolbar_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.appbar.AppBarLayout
+                android:id="@+id/toolbar_layout_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <androidx.appcompat.widget.Toolbar
+                    android:id="@+id/toolbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="?attr/actionBarSize"
+                    android:background="#2196F3"
+                    app:titleTextColor="#FFFFFF">
+
+                    <ImageView
+                        android:id="@+id/backArrow_IMG"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/arrow_back_white_24dp" />
+
+                    <ImageView
+                        android:id="@+id/tv_header_title"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left"
+                        android:src="@drawable/nict_bills_services_logo" />
+
+                </androidx.appcompat.widget.Toolbar>
+
+            </com.google.android.material.appbar.AppBarLayout>
+
+        </RelativeLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:orientation="vertical">
+
+                    <!--                    <com.chivorn.smartmaterialspinner.SmartMaterialSpinner-->
+                    <!--                        android:id="@+id/from_spinner"-->
+                    <!--                        android:layout_width="match_parent"-->
+                    <!--                        android:layout_height="wrap_content"-->
+                    <!--                        android:layout_marginLeft="@dimen/_10sdp"-->
+                    <!--                        android:layout_marginTop="@dimen/_10sdp"-->
+                    <!--                        android:layout_marginRight="@dimen/_10sdp"-->
+                    <!--                        app:smsp_floatingLabelColor="#393737"-->
+                    <!--                        android:visibility="gone"-->
+                    <!--                        app:smsp_floatingLabelText="@string/hotelentrycityhotel"-->
+                    <!--                        app:smsp_hint="@string/hotelentrycityhotel"-->
+                    <!--                        app:smsp_hintColor="#000000"-->
+                    <!--                        app:smsp_isSearchable="true"-->
+                    <!--                        app:smsp_itemColor="#6C6666"-->
+                    <!--                        app:smsp_itemListColor="#6C6666"-->
+                    <!--                        app:smsp_searchHeaderBackgroundColor="#2196F3"-->
+                    <!--                        app:smsp_searchHeaderText="@string/hotelentrycityhotel"-->
+                    <!--                        app:smsp_selectedItemListColor="#4CAF50" />-->
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        style="@style/LoginTextInputLayoutStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="@dimen/_15sdp"
+                        android:layout_marginRight="@dimen/_10sdp"
+                        android:layout_marginBottom="5dp"
+                        android:hint="@string/hotelentrycityhotel"
+                        app:endIconTint="@color/colorPrimaryDark">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/search_city"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:cursorVisible="false"
+                            android:focusable="false"
+                            android:maxLines="1"
+                            android:textSize="14dp" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="15dp"
+                        android:orientation="horizontal"
+                        android:weightSum="2">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_weight="1"
+                            android:text="@string/checkin"
+                            android:textColor="@color/black"
+                            android:textSize="14sp"
+                            android:textStyle="normal" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_weight="1"
+                            android:text="@string/checkout"
+                            android:textColor="@color/black"
+                            android:textSize="14sp"
+                            android:textStyle="normal" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="7dp"
+                        android:layout_marginTop="12dp"
+                        android:orientation="horizontal"
+                        android:weightSum="2">
+
+                        <TextView
+                            android:id="@+id/tv_checkindate"
+                            android:layout_width="0dp"
+                            android:layout_height="40dp"
+                            android:layout_marginStart="5dp"
+                            android:layout_marginEnd="10dp"
+                            android:layout_marginBottom="10dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/border_line_shape" />
+
+                        <TextView
+                            android:id="@+id/tv_checkoutdate"
+                            android:layout_width="0dp"
+                            android:layout_height="40dp"
+                            android:layout_marginStart="5dp"
+                            android:layout_marginEnd="10dp"
+                            android:layout_marginBottom="10dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/border_line_shape" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="15dp"
+                        android:orientation="horizontal"
+                        android:weightSum="2">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_weight="1"
+                            android:text="@string/rooms"
+                            android:textColor="@color/black"
+                            android:textSize="14sp"
+                            android:textStyle="normal" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_weight="1"
+                            android:text="@string/night"
+                            android:textColor="@color/black"
+                            android:textSize="14sp"
+                            android:textStyle="normal" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="7dp"
+                        android:layout_marginTop="12dp"
+                        android:orientation="horizontal"
+                        android:weightSum="2">
+
+                        <Spinner
+                            android:id="@+id/rooms"
+                            android:layout_width="0dp"
+                            android:layout_height="40dp"
+                            android:layout_marginStart="5dp"
+                            android:layout_marginEnd="10dp"
+                            android:layout_marginBottom="@dimen/_10sdp"
+                            android:layout_weight="1"
+                            android:background="@drawable/border_line_shape" />
+
+                        <EditText
+                            android:id="@+id/edt_night"
+                            android:layout_width="0dp"
+                            android:layout_height="40dp"
+                            android:layout_marginStart="5dp"
+                            android:layout_marginEnd="10dp"
+                            android:layout_marginBottom="10dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/border_line_shape"
+                            android:inputType="number"
+                            android:maxLength="1"
+                            android:singleLine="true" />
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="15dp"
+                        android:orientation="horizontal"
+                        android:weightSum="2">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_weight="1"
+                            android:text="Add Adult"
+                            android:textColor="@color/black"
+                            android:textSize="14sp"
+                            android:textStyle="normal" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_weight="1"
+                            android:text="Add Child"
+                            android:textColor="@color/black"
+                            android:textSize="14sp"
+                            android:textStyle="normal" />
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:id="@+id/lay_toproom1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="7dp"
+                        android:layout_marginTop="12dp"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:id="@+id/lay_room1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="7dp"
+                            android:layout_marginTop="12dp"
+                            android:orientation="horizontal"
+                            android:weightSum="2">
+
+                            <EditText
+                                android:id="@+id/edt_adultroom1"
+                                android:layout_width="0dp"
+                                android:layout_height="40dp"
+                                android:layout_marginStart="5dp"
+                                android:layout_marginEnd="10dp"
+                                android:layout_marginLeft="@dimen/_10sdp"
+                                android:layout_marginRight="@dimen/_10sdp"
+                                android:layout_marginBottom="10dp"
+                                android:layout_weight="1"
+                                android:text="1"
+                                android:background="@drawable/border_line_shape"
+                                android:inputType="number"
+                                android:maxLength="1"
+                                android:singleLine="true" />
+
+                            <EditText
+                                android:id="@+id/edt_childroom1"
+                                android:layout_width="0dp"
+                                android:layout_height="40dp"
+                                android:layout_marginStart="5dp"
+                                android:layout_marginEnd="10dp"
+                                android:layout_marginBottom="10dp"
+                                android:layout_marginLeft="@dimen/_10sdp"
+                                android:layout_marginRight="@dimen/_10sdp"
+                                android:background="@drawable/border_line_shape"
+                                android:inputType="number"
+                                android:layout_weight="1"
+                                android:text="0"
+                                android:maxLength="1"
+                                android:singleLine="true" />
+
+                        </LinearLayout>
+
+
+                        <EditText
+                            android:id="@+id/edt_childroom1age1"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:layout_marginEnd="10dp"
+                            android:layout_marginBottom="10dp"
+                            android:visibility="gone"
+
+                            android:layout_marginLeft="@dimen/_15sdp"
+                            android:layout_marginRight="@dimen/_10sdp"
+                            android:background="@drawable/border_line_shape"
+                            android:inputType="number"
+                            android:hint="Enter Age Child 1"
+                            android:maxLength="2"
+                            android:singleLine="true" />
+                        <EditText
+                            android:id="@+id/edt_childroom1age2"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:layout_marginEnd="10dp"
+                            android:layout_marginBottom="10dp"
+                            android:layout_marginLeft="@dimen/_15sdp"
+                            android:layout_marginRight="@dimen/_10sdp"
+                            android:background="@drawable/border_line_shape"
+                            android:inputType="number"
+                            android:visibility="gone"
+
+                            android:hint="Enter Age Child 2"
+                            android:maxLength="2"
+                            android:singleLine="true" />
+                        <EditText
+                            android:id="@+id/edt_childroom1age3"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:layout_marginEnd="10dp"
+                            android:layout_marginBottom="10dp"
+                            android:layout_marginLeft="@dimen/_15sdp"
+                            android:layout_marginRight="@dimen/_10sdp"
+                            android:background="@drawable/border_line_shape"
+                            android:inputType="number"
+                            android:hint="Enter Age Child 3"
+                            android:maxLength="2"
+                            android:visibility="gone"
+
+                            android:singleLine="true" />
+                        <EditText
+                            android:id="@+id/edt_childroom1age4"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:layout_marginEnd="10dp"
+                            android:visibility="gone"
+                            android:layout_marginBottom="10dp"
+                            android:layout_marginLeft="@dimen/_15sdp"
+                            android:layout_marginRight="@dimen/_10sdp"
+                            android:background="@drawable/border_line_shape"
+                            android:inputType="number"
+                            android:hint="Enter Age Child 4"
+                            android:maxLength="2"
+                            android:singleLine="true" />
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/lay_toproom2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="7dp"
+                        android:layout_marginTop="12dp"
+                        android:visibility="gone"
+                        android:orientation="vertical">
+                        <LinearLayout
+                            android:id="@+id/lay_room2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="7dp"
+                            android:layout_marginTop="12dp"
+                            android:orientation="horizontal"
+                            android:weightSum="2">
+
+                            <EditText
+                                android:id="@+id/edt_adultroom2"
+                                android:layout_width="0dp"
+                                android:layout_height="40dp"
+                                android:layout_marginStart="5dp"
+                                android:layout_marginEnd="10dp"
+                                android:layout_marginLeft="@dimen/_10sdp"
+                                android:layout_marginRight="@dimen/_10sdp"
+                                android:layout_marginBottom="10dp"
+                                android:layout_weight="1"
+                                android:text="1"
+                                android:background="@drawable/border_line_shape"
+                                android:inputType="number"
+                                android:maxLength="1"
+                                android:singleLine="true" />
+
+                            <EditText
+                                android:id="@+id/edt_childroom2"
+                                android:layout_width="0dp"
+                                android:layout_height="40dp"
+                                android:layout_marginStart="5dp"
+                                android:layout_marginEnd="10dp"
+                                android:layout_marginBottom="10dp"
+                                android:layout_marginLeft="@dimen/_10sdp"
+                                android:layout_marginRight="@dimen/_10sdp"
+                                android:background="@drawable/border_line_shape"
+                                android:inputType="number"
+                                android:layout_weight="1"
+                                android:text="0"
+                                android:maxLength="1"
+                                android:singleLine="true" />
+
+                        </LinearLayout>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/lay_toproom3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="7dp"
+                        android:layout_marginTop="12dp"
+                        android:visibility="gone"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:id="@+id/lay_room3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="7dp"
+                            android:layout_marginTop="12dp"
+                            android:orientation="horizontal"
+                            android:weightSum="2">
+
+                            <EditText
+                                android:id="@+id/edt_adultroom3"
+                                android:layout_width="0dp"
+                                android:layout_height="40dp"
+                                android:layout_marginStart="5dp"
+                                android:layout_marginEnd="10dp"
+                                android:layout_marginLeft="@dimen/_10sdp"
+                                android:layout_marginRight="@dimen/_10sdp"
+                                android:layout_marginBottom="10dp"
+                                android:layout_weight="1"
+                                android:text="1"
+                                android:background="@drawable/border_line_shape"
+                                android:inputType="number"
+                                android:maxLength="1"
+                                android:singleLine="true" />
+
+                            <EditText
+                                android:id="@+id/edt_childroom3"
+                                android:layout_width="0dp"
+                                android:layout_height="40dp"
+                                android:layout_marginStart="5dp"
+                                android:layout_marginEnd="10dp"
+                                android:layout_marginBottom="10dp"
+                                android:layout_marginLeft="@dimen/_10sdp"
+                                android:layout_marginRight="@dimen/_10sdp"
+                                android:background="@drawable/border_line_shape"
+                                android:inputType="number"
+                                android:layout_weight="1"
+                                android:text="0"
+                                android:maxLength="1"
+                                android:singleLine="true" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/lay_toproom4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="7dp"
+                        android:layout_marginTop="12dp"
+                        android:visibility="gone"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:id="@+id/lay_room4"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="7dp"
+                            android:layout_marginTop="12dp"
+                            android:orientation="horizontal"
+                            android:weightSum="2">
+
+                            <EditText
+                                android:id="@+id/edt_adultroom4"
+                                android:layout_width="0dp"
+                                android:layout_height="40dp"
+                                android:layout_marginStart="5dp"
+                                android:layout_marginEnd="10dp"
+                                android:layout_marginLeft="@dimen/_10sdp"
+                                android:layout_marginRight="@dimen/_10sdp"
+                                android:layout_marginBottom="10dp"
+                                android:layout_weight="1"
+                                android:text="1"
+                                android:background="@drawable/border_line_shape"
+                                android:inputType="number"
+                                android:maxLength="1"
+                                android:singleLine="true" />
+
+                            <EditText
+                                android:id="@+id/edt_childroom4"
+                                android:layout_width="0dp"
+                                android:layout_height="40dp"
+                                android:layout_marginStart="5dp"
+                                android:layout_marginEnd="10dp"
+                                android:layout_marginBottom="10dp"
+                                android:layout_marginLeft="@dimen/_10sdp"
+                                android:layout_marginRight="@dimen/_10sdp"
+                                android:background="@drawable/border_line_shape"
+                                android:inputType="number"
+                                android:layout_weight="1"
+                                android:text="0"
+                                android:maxLength="1"
+                                android:singleLine="true" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/lay_toproom5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="7dp"
+                        android:visibility="gone"
+                        android:layout_marginTop="12dp"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:id="@+id/lay_room5"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="7dp"
+                            android:layout_marginTop="12dp"
+                            android:orientation="horizontal"
+                            android:weightSum="2">
+
+                            <EditText
+                                android:id="@+id/edt_adultroom5"
+                                android:layout_width="0dp"
+                                android:layout_height="40dp"
+                                android:layout_marginStart="5dp"
+                                android:layout_marginEnd="10dp"
+                                android:layout_marginLeft="@dimen/_10sdp"
+                                android:layout_marginRight="@dimen/_10sdp"
+                                android:layout_marginBottom="10dp"
+                                android:layout_weight="1"
+                                android:text="1"
+                                android:background="@drawable/border_line_shape"
+                                android:inputType="number"
+                                android:maxLength="1"
+                                android:singleLine="true" />
+
+                            <EditText
+                                android:id="@+id/edt_childroom5"
+                                android:layout_width="0dp"
+                                android:layout_height="40dp"
+                                android:layout_marginStart="5dp"
+                                android:layout_marginEnd="10dp"
+                                android:layout_marginBottom="10dp"
+                                android:layout_marginLeft="@dimen/_10sdp"
+                                android:layout_marginRight="@dimen/_10sdp"
+                                android:background="@drawable/border_line_shape"
+                                android:inputType="number"
+                                android:layout_weight="1"
+                                android:text="0"
+                                android:maxLength="1"
+                                android:singleLine="true" />
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/adult_rView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/child"
+                        android:textColor="@color/black"
+                        android:layout_marginLeft="10dp"
+                        android:visibility="gone"
+                        android:textSize="14sp"
+                        android:textStyle="normal" />
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/child_rView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/_10sdp"
+                        android:layout_marginRight="@dimen/_10sdp"
+                        android:text="@string/nationality"
+                        android:textColor="@color/black"
+                        android:textSize="14sp"
+                        android:visibility="gone"
+                        android:textStyle="normal" />
+
+                    <Spinner
+                        android:id="@+id/spinner_nat"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginLeft="@dimen/_10sdp"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:layout_marginEnd="10dp"
+                        android:visibility="gone"
+                        android:layout_marginBottom="@dimen/_10sdp"
+                        android:background="@drawable/border_line_shape" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/_10sdp"
+                        android:layout_marginRight="@dimen/_10sdp"
+                        android:text="@string/startrating"
+                        android:textColor="@color/black"
+                        android:textSize="14sp"
+                        android:textStyle="normal" />
+
+                    <Spinner
+                        android:id="@+id/spinner_allrating"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginLeft="@dimen/_10sdp"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:layout_marginEnd="@dimen/_10sdp"
+                        android:layout_marginBottom="@dimen/_10sdp"
+                        android:background="@drawable/border_line_shape" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="2">
+
+
+                        <Button
+                            android:id="@+id/view_hhistory"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/_10sdp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginRight="@dimen/_10sdp"
+                            android:layout_weight="1"
+                            android:text="@string/fviewhistory"
+                            android:textStyle="bold" />
+
+                        <Button
+                            android:id="@+id/btn_hotelsearch"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/_10sdp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginRight="@dimen/_10sdp"
+                            android:layout_weight="1"
+                            android:text="@string/hotelsearch"
+                            android:textStyle="bold" />
+
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+</layout>

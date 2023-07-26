@@ -1,0 +1,411 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".activities.tbo.flight.PassengerDetailsActivity">
+
+    <RelativeLayout
+        android:id="@+id/toolbar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:id="@+id/toolbar_layout_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="#2196F3"
+                app:titleTextColor="#FFFFFF">
+
+                <ImageView
+                    android:id="@+id/backArrow_IMG"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/arrow_back_white_24dp" />
+
+                <ImageView
+                    android:id="@+id/tv_header_title"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:src="@drawable/nict_bills_services_logo" />
+
+            </androidx.appcompat.widget.Toolbar>
+
+        </com.google.android.material.appbar.AppBarLayout>
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/passenger"
+                android:visibility="gone"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/lightseagreen"
+                android:textSize="18dp"
+                android:gravity="center"/>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_25sdp"
+                    android:background="@color/graynew"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/farerules1"
+                        android:textColor="@color/white"
+                        android:gravity="center"
+                        android:layout_marginLeft="@dimen/_10sdp"
+                        android:textSize="@dimen/_14sdp"
+                        />
+
+                </LinearLayout>
+<!--                <com.google.android.material.textfield.TextInputLayout-->
+<!--                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_weight="1"-->
+<!--                    android:layout_marginTop="10dp"-->
+<!--                    android:layout_marginLeft="5dp"-->
+<!--                    android:layout_marginBottom="10dp"-->
+<!--                    android:hint="@string/first_name"-->
+<!--                    android:orientation="horizontal">-->
+
+<!--                    <com.google.android.material.textfield.TextInputEditText-->
+<!--                        android:id="@+id/etFirstName"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:maxLines="1"-->
+<!--                        android:textColor="#000" />-->
+
+<!--                </com.google.android.material.textfield.TextInputLayout>-->
+
+
+
+<!--                <com.google.android.material.textfield.TextInputLayout-->
+<!--                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginLeft="5dp"-->
+<!--                    android:layout_marginTop="5dp"-->
+<!--                    clickable="true"-->
+<!--                    android:hint="@string/last_name">-->
+
+<!--                    <com.google.android.material.textfield.TextInputEditText-->
+<!--                        android:id="@+id/etLastName"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:maxLines="1"-->
+<!--                        android:textColor="#000" />-->
+
+<!--                </com.google.android.material.textfield.TextInputLayout>-->
+
+<!--                <LinearLayout-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:orientation="vertical">-->
+
+<!--                    <TextView-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:text="@string/gender"-->
+<!--                        android:layout_marginStart="10dp"-->
+<!--                        android:layout_marginTop="12dp"-->
+<!--                        android:textSize="16dp"/>-->
+
+<!--                    <RadioGroup-->
+<!--                        android:id="@+id/radio_group"-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_below="@id/select"-->
+<!--                        android:orientation="horizontal">-->
+
+
+<!--                        <RadioButton-->
+<!--                            android:id="@+id/male"-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:layout_marginStart="5dp"-->
+<!--                            android:buttonTintMode="@color/blue"-->
+<!--                            android:fontFamily="@font/gotham_book_regular"-->
+<!--                            android:text="@string/male"-->
+<!--                            android:checked="true"-->
+<!--                            android:backgroundTint="@color/green"-->
+<!--                            android:textSize="14sp" />-->
+
+<!--                        <RadioButton-->
+<!--                            android:id="@+id/others"-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:layout_marginStart="10dp"-->
+<!--                            android:buttonTintMode="@color/blue"-->
+<!--                            android:fontFamily="@font/gotham_book_regular"-->
+<!--                            android:text="@string/female"-->
+<!--                            android:textSize="14sp" />-->
+<!--                    </RadioGroup>-->
+
+<!--                </LinearLayout>-->
+
+
+<!--                <com.google.android.material.textfield.TextInputLayout-->
+<!--                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginLeft="5dp"-->
+<!--                    android:layout_marginTop="5dp"-->
+<!--                    android:layout_marginRight="5dp"-->
+<!--                    clickable="true"-->
+<!--                    android:hint="@string/mobile_no">-->
+
+<!--                    <com.google.android.material.textfield.TextInputEditText-->
+<!--                        android:id="@+id/etMobile"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:maxLines="1"-->
+<!--                        android:maxLength="10"-->
+<!--                        android:inputType="number"-->
+<!--                        android:textColor="#000" />-->
+
+<!--                </com.google.android.material.textfield.TextInputLayout>-->
+
+
+<!--                <com.google.android.material.textfield.TextInputLayout-->
+<!--                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginLeft="5dp"-->
+<!--                    android:layout_marginTop="5dp"-->
+<!--                    android:layout_marginRight="5dp"-->
+<!--                    clickable="true"-->
+<!--                    android:hint="@string/email">-->
+
+<!--                    <com.google.android.material.textfield.TextInputEditText-->
+<!--                        android:id="@+id/etEmail"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:maxLines="1"-->
+<!--                        android:textColor="#000" />-->
+
+<!--                </com.google.android.material.textfield.TextInputLayout>-->
+
+
+<!--                <com.google.android.material.textfield.TextInputLayout-->
+<!--                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginLeft="5dp"-->
+<!--                    android:layout_marginTop="5dp"-->
+<!--                    android:layout_marginRight="5dp"-->
+<!--                    clickable="true"-->
+<!--                    android:hint="@string/address">-->
+
+<!--                    <com.google.android.material.textfield.TextInputEditText-->
+<!--                        android:id="@+id/etAdress"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:maxLines="1"-->
+<!--                        android:textColor="#000" />-->
+
+<!--                </com.google.android.material.textfield.TextInputLayout>-->
+
+<!--                <com.google.android.material.textfield.TextInputLayout-->
+<!--                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginLeft="5dp"-->
+<!--                    android:layout_marginTop="5dp"-->
+<!--                    android:layout_marginRight="5dp"-->
+<!--                    clickable="true"-->
+<!--                    android:hint="@string/user_city">-->
+
+<!--                    <com.google.android.material.textfield.TextInputEditText-->
+<!--                        android:id="@+id/etCity"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:maxLines="1"-->
+<!--                        android:textColor="#000" />-->
+
+<!--                </com.google.android.material.textfield.TextInputLayout>-->
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_marginStart="10dp">
+
+                    <TextView
+                        android:id="@+id/country_TXT"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="@string/country"
+                        android:textColor="#CE000000"
+                        android:textSize="16dp"
+                        android:textStyle="normal" />
+
+                    <Spinner
+                        android:id="@+id/spCountry"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="12dp"
+                        android:layout_toEndOf="@+id/country_TXT"
+                        android:gravity="right" />
+
+                </RelativeLayout>
+
+                 <CheckBox
+                     android:id="@+id/check_push"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:text="@string/push_booking"/>
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="5dp"
+                    clickable="true"
+                    android:hint="@string/mobile_no">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/pushbooking_no1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone"
+                        android:maxLines="1"
+                        android:maxLength="10"
+                        android:inputType="number"
+                        android:textColor="#000" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_25sdp"
+                    android:background="@color/graynew"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/farerules"
+                        android:textColor="@color/white"
+                        android:layout_marginLeft="@dimen/_10sdp"
+                        android:textSize="@dimen/_14sdp"
+                        />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/faredetails_rules"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:layout_centerVertical="true"
+                    android:textColor="#CE000000"
+                    android:textSize="16dp"
+                    android:textStyle="normal" />
+
+                <RadioGroup
+                    android:id="@+id/radio_group_farerules"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/select"
+                    android:orientation="horizontal">
+
+
+                    <RadioButton
+                        android:id="@+id/no_assistance"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:buttonTintMode="@color/blue"
+                        android:fontFamily="@font/gotham_book_regular"
+                        android:text="@string/noassistance"
+                        android:checked="true"
+                        android:backgroundTint="@color/green"
+                        android:textSize="14sp" />
+
+                </RadioGroup>
+
+
+
+
+            </LinearLayout>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnSelectSeats"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_margin="10dp"
+                android:layout_gravity="center"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:textSize="18dp"
+                android:text="Continue For Booking"
+                android:textStyle="bold"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/BookingRewiew"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_gravity="center"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/_18sdp"
+                android:text="Proceed To Booking Rewiew"
+                android:textStyle="bold"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="10dp"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btncontinue"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_gravity="center"
+                android:layout_height="wrap_content"
+                android:textSize="18dp"
+                android:text="Continue For Booking"
+                android:textStyle="bold"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="10dp"/>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>

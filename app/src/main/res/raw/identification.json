@@ -1,0 +1,12 @@
+[
+    {
+        "IDType": "Aadhar Card",
+        "IdCode":  "M"
+    },
+    {
+        "IDType": "PAN Card",
+        "IdCode":  "T"
+      
+    }
+
+]

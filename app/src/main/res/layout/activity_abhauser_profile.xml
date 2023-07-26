@@ -1,0 +1,624 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activities.health_id_abdm.ABHAUserProfileActivity">
+
+
+    <RelativeLayout
+        android:id="@+id/toolbar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:id="@+id/toolbar_layout_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                app:titleTextColor="#FFFFFF"
+                android:background="#2196F3">
+
+                <ImageView
+                    android:id="@+id/backArrow_IMG"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/arrow_back_white_24dp"/>
+
+                <ImageView
+                    android:id="@+id/tv_header_title"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:src="@drawable/nict_bills_services_logo" />
+
+
+            </androidx.appcompat.widget.Toolbar>
+
+        </com.google.android.material.appbar.AppBarLayout>
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:id="@+id/setABHA_Address_LL"
+                    android:visibility="gone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical">
+
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/abha_card"
+                            android:textColor="#000"
+                            android:layout_weight="1"
+                            android:textSize="16dp"
+                            android:textStyle="bold"
+                            android:layout_gravity="center"
+                            android:gravity="center"/>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:layout_margin="5dp"
+                        android:background="@drawable/linear_layout_customborder"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+
+                            android:orientation="vertical">
+
+                            <de.hdodenhof.circleimageview.CircleImageView
+                                xmlns:app="http://schemas.android.com/apk/res-auto"
+                                android:id="@+id/userProfile_Image"
+                                android:layout_width="100dp"
+                                android:layout_height="100dp"
+                                android:layout_marginTop="10dp"
+                                android:layout_gravity="center"
+                                android:src="@drawable/user"
+                                app:civ_border_color="#C2BEBE"
+                                app:civ_border_width="0.3dp" />
+
+
+                        </LinearLayout>
+
+
+                        <TextView
+                            android:id="@+id/user_name_TV"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="10dp"
+                            android:gravity="center"
+                            android:text="Name"
+                            android:textColor="#000"
+                            android:textSize="15dp"
+                            />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:layout_marginTop="5dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/abha_address_TV"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:text="ABHA Address"
+                                android:textSize="15dp"
+                                />
+
+
+
+                            <TextView
+                                android:id="@+id/copy_abha_address_TV"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:layout_marginLeft="10dp"
+                                android:textColor="#2196F3"
+                                android:text="@string/copy"
+                                android:textSize="15dp"
+                                />
+
+                        </LinearLayout>
+
+
+                        <ImageView
+                            android:id="@+id/account_qr_IMG"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            />
+
+
+
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/anyone_can_scan_this_health_records"
+                            android:textSize="14dp"
+                            android:layout_gravity="center"
+                            android:padding="10dp"
+                            android:gravity="center"/>
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="#B6EAF3F3"
+                            android:layout_marginTop="10dp"
+                            android:padding="5dp"
+                            android:orientation="vertical">
+
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="15dp"
+                                android:textColor="#2196F3"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="10dp"
+                                android:text="@string/abha_number"/>
+
+                            <TextView
+                                android:id="@+id/abha_id_TV"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="15dp"
+                                android:textColor="#0C0C0C"
+                                android:textIsSelectable="true"
+                                android:textStyle="bold"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="10dp"
+                                android:text="ABHA ID"/>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:id="@+id/download_ABHA_card_LL"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:padding="10dp"
+                        android:background="@drawable/linear_layout_customborder"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/download_ABHA_card"
+                            android:textColor="#2196F3"
+                            android:textSize="16dp"
+                            android:layout_weight="1"
+                            android:layout_gravity="center"
+                            android:gravity="center"/>
+
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="10dp"
+                            android:src="@drawable/invoice_download"/>
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:id="@+id/profile_ABHA_card_LL"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:padding="10dp"
+                        android:background="@drawable/linear_layout_customborder"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/profile"
+                            android:textColor="#2196F3"
+                            android:textSize="16dp"
+                            android:layout_weight="1"
+                            android:layout_gravity="center"
+                            android:gravity="center"/>
+
+                     <!--   <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="10dp"
+                            android:src="@drawable/invoice_download"/>-->
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:id="@+id/logout_ABHA_card_LL"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:padding="10dp"
+                        android:background="@drawable/linear_layout_customborder"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/back"
+                            android:textColor="#2196F3"
+                            android:textSize="16dp"
+                            android:layout_weight="1"
+                            android:layout_gravity="center"
+                            android:gravity="center"/>
+
+                        <!--   <ImageView
+                               android:layout_width="20dp"
+                               android:layout_height="20dp"
+                               android:layout_marginLeft="5dp"
+                               android:layout_marginRight="10dp"
+                               android:src="@drawable/invoice_download"/>-->
+                    </LinearLayout>
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/add_member_Button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:text="@string/add_member"
+                        android:textSize="16dp"
+                        android:textStyle="bold"
+                        android:visibility="gone" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/setUser_Profile_LL"
+                    android:visibility="gone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/abha_card"
+                        android:textColor="#000"
+                        android:layout_weight="1"
+                        android:textSize="16dp"
+                        android:textStyle="bold"
+                        android:layout_gravity="center"
+                        android:gravity="center"/>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:layout_margin="5dp"
+                        android:background="@drawable/linear_layout_customborder"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="5dp"
+                            android:orientation="horizontal">
+
+                            <de.hdodenhof.circleimageview.CircleImageView
+                                xmlns:app="http://schemas.android.com/apk/res-auto"
+                                android:id="@+id/userProfileCard_Image"
+                                android:layout_width="80dp"
+                                android:layout_height="80dp"
+                                android:layout_marginTop="10dp"
+                                android:layout_gravity="left"
+                                android:src="@drawable/user"
+                                app:civ_border_color="#C2BEBE"
+                                app:civ_border_width="0.3dp" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/user_name_card_TV"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="10dp"
+                                    android:layout_marginLeft="10dp"
+                                    android:text="Name"
+                                    android:textColor="#000"
+                                    android:textSize="13dp"
+                                    android:textStyle="bold"
+                                    />
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_marginLeft="10dp"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="@string/abha_address"
+                                        android:textSize="12dp"
+                                        />
+
+                                    <TextView
+                                        android:id="@+id/abha_address_card_TV"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:gravity="center"
+                                        android:textColor="#000"
+                                        android:layout_marginLeft="5dp"
+                                        android:text="@string/abha_address"
+                                        android:textSize="13dp"
+                                        />
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_marginLeft="10dp"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:textSize="12dp"
+                                        android:text="@string/abha_number"/>
+
+                                    <TextView
+                                        android:id="@+id/abha_card_id_TV"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:textSize="13dp"
+                                        android:textIsSelectable="true"
+                                        android:layout_gravity="center"
+                                        android:textColor="#000"
+                                        android:layout_marginLeft="5dp"
+                                        android:text="ABHA ID"/>
+
+                                </LinearLayout>
+
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/personal_details"
+                        android:textSize="14dp"
+                        android:textStyle="bold"
+                        android:layout_margin="10dp"/>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:layout_margin="5dp"
+                        android:padding="5dp"
+                        android:background="@drawable/linear_layout_customborder"
+                        android:orientation="vertical">
+
+
+
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textSize="13dp"
+                                android:text="@string/full_name"/>
+
+
+                            <TextView
+                                android:id="@+id/user_full_name_card_TV"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textSize="14dp"
+                                android:layout_marginTop="5dp"
+                                android:textColor="#000"
+                                android:text="@string/full_name"/>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="#B5B4B4"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginBottom="8dp"
+                            />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="13dp"
+                            android:text="@string/year_of_birth_abha"/>
+
+
+                        <TextView
+                            android:id="@+id/user_year_of_birth_card_TV"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="14dp"
+                            android:layout_marginTop="5dp"
+                            android:textColor="#000"
+                            android:text="@string/year_of_birth_abha"/>
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="#B5B4B4"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginBottom="8dp"
+                            />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="13dp"
+                            android:text="@string/gender"/>
+
+
+                        <TextView
+                            android:id="@+id/user_gender_card_TV"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="14dp"
+                            android:layout_marginTop="5dp"
+                            android:textColor="#000"
+                            android:text="@string/gender"/>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="#B5B4B4"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginBottom="8dp"
+                            />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="13dp"
+                            android:text="@string/mobile_number"/>
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="horizontal">
+
+
+                            <TextView
+                                android:id="@+id/user_mobile_card_TV"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:textSize="14dp"
+                                android:layout_weight="1"
+                                android:layout_marginTop="5dp"
+                                android:textColor="#000"
+                                android:text="@string/mobile_number"/>
+
+
+
+                            <TextView
+                                android:visibility="gone"
+                                android:id="@+id/edit_mobile_card_TV"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="14dp"
+                                android:layout_marginTop="5dp"
+                                android:textColor="#2196F3"
+                                android:textStyle="bold"
+                                android:layout_marginRight="10dp"
+                                android:text="@string/edit"/>
+
+
+
+                        </LinearLayout>
+
+
+
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="#B5B4B4"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginBottom="8dp"
+                            />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="13dp"
+                            android:text="@string/address"/>
+
+
+                        <TextView
+                            android:id="@+id/user_address_card_TV"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="14dp"
+                            android:layout_marginTop="5dp"
+                            android:textColor="#000"
+                            android:layout_marginBottom="5dp"
+                            android:text="@string/address"/>
+
+
+                    </LinearLayout>
+
+
+
+
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+        </ScrollView>
+
+
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

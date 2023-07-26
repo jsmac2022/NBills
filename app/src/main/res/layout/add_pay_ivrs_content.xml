@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:id="@+id/parent_linear_layout"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:showIn="@layout/app_bar_add_ivrs"
+    android:background="#08000000"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    android:orientation="vertical">
+
+
+
+    <FrameLayout
+        android:visibility="gone"
+        android:id="@+id/scan_View_FrameLayout"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.budiyev.android.codescanner.CodeScannerView
+            android:id="@+id/scanner_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:autoFocusButtonColor="@android:color/white"
+            app:autoFocusButtonVisible="true"
+            app:flashButtonColor="@android:color/white"
+            app:flashButtonVisible="true"
+            app:frameColor="@android:color/white"
+            app:frameCornersSize="50dp"
+            app:frameCornersRadius="0dp"
+            app:frameAspectRatioWidth="1"
+            app:frameAspectRatioHeight="1"
+            app:frameSize="0.75"
+            app:frameThickness="2dp"
+            app:maskColor="#77000000"/>
+    </FrameLayout>
+
+
+    <LinearLayout
+        android:id="@+id/btnScanBarcode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="5dp"
+        android:background="@drawable/linear_button"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        android:visibility="visible">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/scan_and_pay"
+            android:textColor="#fff"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/scanner_s"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/scan_IVRS_QR_from_the_meter"
+        android:layout_gravity="center"
+        android:gravity="center"/>
+
+
+    <LinearLayout
+        android:visibility="gone"
+        android:id="@+id/add_ivrs_LinearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+   <androidx.cardview.widget.CardView
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_margin="10dp">
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_margin="5dp"
+           android:orientation="vertical">
+
+           <com.google.android.material.textfield.TextInputLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:hint="@string/ivrs_number"
+               android:orientation="horizontal">
+
+               <com.google.android.material.textfield.TextInputEditText
+                   android:id="@+id/ivrs_EditText"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:inputType="textCapCharacters"
+                   android:maxLines="1"
+                   android:textColor="#000" />
+
+           </com.google.android.material.textfield.TextInputLayout>
+
+           <TextView
+               android:id="@+id/find_ivrs_number_TV"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:textSize="15dp"
+               android:textColor="#1271BD"
+               android:layout_marginLeft="5dp"
+               android:text="@string/find_IVRS_number"/>
+
+
+           <Button
+               android:id="@+id/add_IVRS_Button"
+               android:layout_width="140dp"
+               android:layout_height="wrap_content"
+               android:layout_gravity="center"
+               android:background="@drawable/custom_button"
+               android:gravity="center"
+               android:text="@string/add_IVRS"
+               android:layout_marginTop="20dp"
+               android:layout_marginBottom="5dp"
+               android:textColor="#fff" />
+
+       </LinearLayout>
+   </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/added_ivrs_LinearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/added_ivrs_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    </LinearLayout>
+
+</LinearLayout>

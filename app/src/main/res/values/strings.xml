@@ -1,0 +1,535 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name">n Pe</string>
+    <string name="title_activity_dashboard">Dashboard Activity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="action_settings">Settings</string>
+    <string name="downloading">Downloading</string>
+    <string name="next">NEXT</string>
+    <string name="skip">SKIP</string>
+    <string name="start">GOT IT</string>
+    <string name="slide_1_title">NICT Bills</string>
+    <string name="slide_1_desc">You can pay &amp; check your last electricity bill easily</string>
+    <string name="slide_2_title">0% Charges</string>
+    <string name="slide_2_desc">Pay your electricity bill online with UPI at 0% charges</string>
+    <!-- <string name="slide_2_desc">Pay your electricity bills online for saving your time and energy</string>-->
+    <string name="slide_3_title">Electricity Bills</string>
+    <string name="slide_3_desc">View your current electricity bills with details.</string>
+    <string name="slide_4_title">Online Pay</string>
+    <string name="slide_4_desc">Choose from various payment options</string>
+    <string name="no_internet_connection">No internet connection!</string>
+    <string name="retry">RETRY</string>
+    <string name="logout">Logout</string>
+    <string name="are_you_sure_you_want_to_logout">Are you sure you want to logout</string>
+    <string name="are_you_sure_you_want_to_back">Are you sure you want to back</string>
+    <string name="exit_yes">Yes</string>
+    <string name="exit_no">No</string>
+    <string name="open_it_in_google_play_store">NICT Bills  (Open it in Google Play Store to Download the Application)</string>
+    <string name="loading">Loading....</string>
+    <string name="one_moment_please">One moment please</string>
+    <string name="something_went_wrong">Something went wrong</string>
+    <string name="unable_to_connect_to_server">Unable to connect to the server</string>
+    <string name="login_again">Login Again</string>
+    <string name="something_went_wrong_please_try_again_later">Something went wrong please try again later</string>
+    <string name="phr_address_already_exists_try_another">PHR-Address already exists try another PHR-Address</string>
+    <string name="please_enter_IVRS_number">Please enter IVRS number</string>
+    <string name="action">Action</string>
+    <string name="delete">Delete?</string>
+    <string name="are_you_sure_you_want_to_delete_IVRS">Are you sure you want to delete IVRS</string>
+    <string name="please_wait">Please wait....</string>
+    <string name="do_not_press_back_button">Please do not close the NICT Bills App or click the back button</string>
+    <string name="payment_cancelled">Payment canceled</string>
+    <string name="are_you_sure_you_want_to_exit">Are you sure you want to exit?</string>
+    <string name="exit">EXIT</string>
+    <string name="connecting">Connecting....</string>
+    <string name="update_available">Update Available</string>
+    <string name="new_update_is_available_on_google_play_store">New update is available on Google Play Store</string>
+    <string name="update">Update</string>
+    <string name="mobile_number_is_required">Mobile number is required!</string>
+    <string name="invalid_mobile_number">Invalid mobile number</string>
+    <string name="getting_OTP">Getting OTP....</string>
+    <string name="kindly_mentioned_correct_mobile_number">Kindly mentioned the correct mobile number</string>
+    <string name="kindly_enter_the_OTP_sent_on_your_mobile_number">Kindly enter the OTP sent on your Mobile Number</string>
+    <string name="invalid_OTP">Invalid OTP!</string>
+    <string name="resend_OTP_in">Resend OTP in:</string>
+    <string name="otp_resend_successfully">OTP resend successfully</string>
+    <string name="otp_send_successfully">OTP send successfully</string>
+    <string name="otp_verification_failed">OTP verification failed</string>
+    <string name="kindly_mentioned_correct_OTP">Kindly mention the correct OTP</string>
+    <string name="bill_payment_successful_of_IVRS_number">Bill payment successful of IVRS number</string>
+    <string name="bill_payment_failed_of_IVRS_number">Bill payment failed of IVRS number</string>
+    <string name="invalid_amount">Invalid Amount</string>
+    <string name="pay">PAY</string>
+    <string name="kindly_fill_UPI_Id">Kindly fill UPI Id</string>
+    <string name="download_done">Download Done</string>
+    <string name="select_language">Select Language</string>
+    <string name="english" translatable="true">English</string>
+    <string name="hindi" translatable="true">हिंदी</string>
+    <string name="submit" translatable="true">Submit</string>
+    <string name="privacy_policy" translatable="true">Privacy policy</string>
+    <string name="about_us" translatable="true">About us</string>
+    <string name="app_version" translatable="true">App version</string>
+    <string name="dashboard" translatable="true">Dashboard</string>
+    <string name="transaction_history" translatable="true">Transactions</string>
+    <string name="support" translatable="true">Support</string>
+    <string name="help" translatable="true">Help</string>
+    <string name="about" translatable="true">About and Help</string>
+    <string name="terms_and_conditions" translatable="true">Terms And Conditions</string>
+    <string name="language" translatable="true">Language</string>
+    <string name="communicate" translatable="true">Communicate</string>
+    <string name="share" translatable="true">Share</string>
+    <string name="login_or_register" translatable="true">Login or Register</string>
+    <string name="mobile_number" translatable="true">Mobile Number</string>
+    <string name="alternate_mobile_number" translatable="true">Alternate Mobile Number</string>
+    <string name="get_OTP" translatable="true">Get OTP</string>
+    <string name="designed_and_developed_by_NICT" translatable="true">Designed and developed by NICT Technologies Pvt. Ltd.</string>
+    <string name="almost_done" translatable="true">Almost done !</string>
+    <string name="verify" translatable="true">Verify</string>
+    <string name="resend_OTP" translatable="true">Resend OTP</string>
+    <string name="pay_using" translatable="true">Pay Using</string>
+    <string name="payment_details" translatable="true">Payment Details</string>
+    <string name="ivrs_no" translatable="true">IVRS no.</string>
+    <string name="name" translatable="true">Name</string>
+    <string name="amount" translatable="true">Amount</string>
+    <string name="upi" translatable="true">UPI</string>
+    <string name="no_extra_charges" translatable="true">(No Extra Charges)</string>
+    <string name="debit_credit_card_net_banking" translatable="true">Debit/Credit Card/ Net Banking</string>
+    <string name="pay_using_UPI_id" translatable="true">PAY USING UPI ID</string>
+    <string name="you_will_receive_a_payment_request_on_your_UPI_app" translatable="true">You will receive a payment request on your UPI App</string>
+    <string name="upi_id" translatable="true">UPI Id</string>
+    <string name="google_pay_BHIM_phonePe_more" translatable="true">Google Pay, BHIM, PhonePe &amp; more</string>
+    <string name="enter_your_UPI_ID" translatable="true">Enter your UPI ID</string>
+    <string name="pay_using_apps" translatable="true">PAY USING APPS</string>
+    <string name="you_will_be_redirected_to_your_UPI_app" translatable="true">You will be redirected to your UPI App</string>
+    <string name="payment_status" translatable="true">Payment Status</string>
+    <string name="payment_successful" translatable="true">Payment Successful</string>
+    <string name="transaction_number" translatable="true">Transaction Number</string>
+    <string name="success" translatable="true">Success</string>
+    <string name="payment_failed" translatable="true">Payment Failed</string>
+    <string name="try_again" translatable="true">Try Again</string>
+    <string name="failed" translatable="true">Failed</string>
+    <string name="the_transaction_was_pending" translatable="true">The transaction was pending</string>
+    <string name="please_contact_us_If_the_amount_has_been_debited_from_your_account" translatable="true">Please contact us, If the amount has been debited from your account.</string>
+    <string name="transaction_details" translatable="true">Transaction Details</string>
+    <string name="service_details" translatable="true">Service Details</string>
+    <string name="ivrs_number" translatable="true">Service Number</string>
+    <string name="location" translatable="true">Location</string>
+    <string name="service" translatable="true">Service</string>
+    <string name="receipt_number" translatable="true">Receipt number</string>
+    <string name="order_id" translatable="true">Order Id</string>
+    <string name="convenience_fee" translatable="true">Convenience fee</string>
+    <string name="date" translatable="true">Date</string>
+    <string name="download_invoice" translatable="true">Download Invoice</string>
+    <string name="pay_another_bill" translatable="true">Pay Another Bill</string>
+    <string name="failed_message" translatable="true">Failed Message</string>
+    <string name="payment_pending" translatable="true">Payment Pending</string>
+    <string name="payment_method" translatable="true">Payment Method</string>
+    <string name="find_IVRS_number" translatable="true">Find IVRS Number</string>
+    <string name="add_IVRS" translatable="true">Add IVRS</string>
+    <string name="scan_and_pay" translatable="true">Scan And Pay</string>
+    <string name="add_more_IVRS" translatable="true">Add More IVRS</string>
+    <string name="confirmation" translatable="true">Confirmation</string>
+    <string name="email" translatable="true">Email</string>
+    <string name="enter_your_email_for_receipt" translatable="true">Enter your email for receipt</string>
+    <string name="cancel" translatable="true">Cancel</string>
+    <string name="please_accept_the_request_from_NICT_bills_on_your_UPI_App" translatable="true">Please accept the request from NICT bills on your UPI App</string>
+    <string name="cancel_payment" translatable="true">Cancel Payment</string>
+    <string name="MPPKVVCL_bill" translatable="true">MPPKVVCL Bill</string>
+    <string name="electricity_bill" translatable="true">Electricity Bill</string>
+    <string name="t_and_c" translatable="true">T &amp; C</string>
+    <string name="someting_went_wrong" translatable="true">Something went wrong</string>
+    <string name="refer_bill_document_for_IVRS_number" translatable="true">Refer bill document for IVRS number</string>
+    <string name="due_date" translatable="true">Due Date</string>
+    <string name="pay_now" translatable="true">Pay Now</string>
+    <string name="ivrs_added_successfully" translatable="true">IVRS Added Successfully</string>
+    <string name="ok" translatable="true">Ok</string>
+    <string name="ivrs_details" translatable="true">IVRS Details</string>
+    <string name="address" translatable="true">Address</string>
+    <string name="circle" translatable="true">Circle</string>
+    <string name="with_surcharge" translatable="true">With Surcharge</string>
+    <string name="enable_camera_access" translatable="true">Enable Camera Access</string>
+    <string name="enable_your_camera_permission_to_start_scanning_QR_code" translatable="true">Please enable your camera permission to start scanning QR code</string>
+    <string name="enable_camera" translatable="true">Enable Camera</string>
+    <string name="permission_required" translatable="true">Permission Required</string>
+    <string name="allow_all_required_permission_to_access_NICT_Bills" translatable="true">Allow all required permission to access NICT Bills</string>
+    <string name="enable_access" translatable="true">Enable Access</string>
+    <string name="fee" translatable="true">Fee</string>
+    <string name="convenience_fee_will_be_charged_depending_on_your_choice_of_payment_method" translatable="true">A convenience fee will be charged depending on your choice of payment method.</string>
+    <string name="for_any_queries_please_contact_us_at" translatable="true">For any queries please contact us at</string>
+    <string name="call_us" translatable="true">Call Now</string>
+    <string name="email_us" translatable="true">Email Us</string>
+    <string name="no_transaction" translatable="true">No Transaction</string>
+    <string name="you_haven_made_any_transaction_yet" translatable="true">You haven\'t made any transaction yet</string>
+    <string name="scan_IVRS_QR_from_the_meter" translatable="true">Scan IVRS QR from the meter and pay your bill</string>
+    <string name="vaccine_finder" translatable="true">Vaccine Finder</string>
+    <string name="mobile_recharge" translatable="true">Mobile Recharge</string>
+    <string name="dth_recharge" translatable="true">DTH Recharge</string>
+    <string name="msbm_name" translatable="true">MSBM</string>
+    <string name="full_msbm_name" translatable="true">Metropolitan School of Business and Management</string>
+    <string name="select_subject" translatable="true">Select subject</string>
+    <string name="course_categories" translatable="true">Categories</string>
+    <string name="search" translatable="true">Search</string>
+    <string name="no_category_match" translatable="true">This subject is not available in this category select another category</string>
+    <string name="regis_login_for_vaccine" translatable="true">Register or Login for Vaccination</string>
+    <string name="COVID_vaccine_slot_finder" translatable="true">COVID-19 Vaccine Slot Finder</string>
+    <string name="book_directly_on_NICT_bills" translatable="true">Book directly on NICT Bills</string>
+    <string name="you_can_now_book_your_vaccine_slot_on_NICT_Bills" translatable="true">You can now book your vaccine slot on NICT Bills</string>
+    <string name="select_your_photo_id" translatable="true">Select your photo ID</string>
+    <string name="add_new_bene" translatable="true">Add New Beneficiary</string>
+    <string name="photo_proof_details" translatable="true">Your Photo ID will be verified at the time of your vaccination appointment. Please provide the details of the Photo ID you will carry for vaccination.</string>
+    <string name="select_gender" translatable="true">Kindly select gender</string>
+    <string name="proof_Id_number" translatable="true">Proof Id number</string>
+    <string name="beneficiary_name_photo_Id_card" translatable="true">Beneficiary name as per photo Id card</string>
+    <string name="year_of_birth" translatable="true">Year of birth (YYYY)</string>
+    <string name="gender" translatable="true">Gender</string>
+    <string name="already_registered_or_cannot_register" translatable="true">Already registered or cannot register more than 4 individuals with one mobile number.</string>
+    <string name="kindly_select_your_photo_Id" translatable="true">Kindly select your photo Id</string>
+    <string name="kindly_enter_your_photo_Id_number" translatable="true">Kindly enter your photo Id number</string>
+    <string name="kindly_enter_the_name" translatable="true">Kindly enter a name as per the photo Id card</string>
+    <string name="kindly_enter_birth_year" translatable="true">Kindly enter the birth year</string>
+    <string name="kindly_enter_correct_birth_year" translatable="true">Kindly enter the correct birth year (YYYY)</string>
+    <string name="kindly_select_gender" translatable="true">Kindly select gender</string>
+    <string name="beneficiary_list" translatable="true">Beneficiary list</string>
+    <string name="pincode_required" translatable="true">Please enter valid PIN Code</string>
+    <string name="operator_circle" translatable="true">Operator</string>
+    <string name="enter_plan_amount" translatable="true">Enter Plan Amount</string>
+    <string name="view_plans" translatable="true">View plans</string>
+    <string name="covin_rule" translatable="true">The vaccine booking flow is approved by Co-WIN. We do not store any booking-related user data on our system. </string>
+    <string name="select_operator_circle" translatable="true">Kindly select operator</string>
+    <string name="enter_recharge_amount" translatable="true">Enter recharge amount</string>
+    <string name="bill_payment_successful_mobile_number">Recharge successful of mobile number</string>
+    <string name="bill_payment_failed_of_mobile_number">Recharge failed of Mobile number</string>
+    <string name="bill_payment_failed_of_dth_number">Recharge failed of DTH number</string>
+    <string name="bill_payment_failed_of_lic_number">Payment failed of LIC number</string>
+    <string name="bill_payment_successful_dth_number">Recharge successful of DTH number</string>
+    <string name="bill_payment_successful_lic_number">Payment successful of LIC number</string>
+    <string name="customer_id">Customer Id</string>
+    <string name="select_operator">Select operator</string>
+    <string name="enter_amount">Enter amount</string>
+    <string name="operator">Select Operator</string>
+    <string name="enter_dth_customer_id" translatable="true">Enter customer Id</string>
+    <string name="rewards_points" translatable="true">Reward point</string>
+    <string name="total_balance" translatable="true">Total Reward Balance</string>
+    <string name="reward_details" translatable="true">Reward Balance Details</string>
+    <string name="added" translatable="true">Added</string>
+    <string name="paid" translatable="true">Paid</string>
+    <string name="no_rewards" translatable="true">No rewards</string>
+    <string name="description" translatable="true">Description</string>
+    <string name="transaction_id" translatable="true">Transaction Id </string>
+    <string name="on" translatable="true">On </string>
+    <string name="point" translatable="true">Point</string>
+    <string name="amount_pay" translatable="true">Amount Pay</string>
+    <string name="lic_premium" translatable="true">LIC Premium</string>
+    <string name="policy_number" translatable="true">Policy Number</string>
+    <string name="email_id" translatable="true">Email Id</string>
+    <string name="enter_policy_number" translatable="true">Enter policy number</string>
+    <string name="enter_email_id" translatable="true">Enter Email Id</string>
+    <string name="LIC_premium_bill_not_generated" translatable="true">LIC premium bill not generated</string>
+    <string name="user_name" translatable="true">Name</string>
+    <string name="details" translatable="true">Details</string>
+    <string name="nict_arogyam" translatable="true">NICT Arogyam</string>
+    <string name="book_covid_vaccine" translatable="true">Book Covid Vaccine</string>
+    <string name="download_certificate" translatable="true">Download Certificate</string>
+    <string name="cowin_certificate" translatable="true">CoWIN Certificate</string>
+    <string name="enter_valid_email" translatable="true">Enter valid email</string>
+    <string name="you_can_now_book_your_vaccine_slot" translatable="true">You can now book your vaccine slot on NICT Bills &amp; Services</string>
+    <string name="create_your_ABHA" translatable="true">Create your ABHA</string>
+    <string name="the_first_step_to_creating_safer_and_more_efficient_digital_health" translatable="true">ABHA (Ayushman Bharat Health Account) is the first step to creating safer and more efficient digital health records for you and your family.</string>
+    <string name="create_health_id" translatable="true">Create ABHA</string>
+    <string name="abha" translatable="true">ABHA</string>
+    <string name="enter_aadhar_number" translatable="true">Enter Aadhaar card Number</string>
+    <string name="enter_otp" translatable="true">Enter OTP</string>
+    <string name="mobile_number_verification" translatable="true">Mobile number verification</string>
+    <string name="enter_the_mobile_number_you_want_to_link_with_this_ABHA_account" translatable="true">Enter the mobile number you want to link with this ABHA account</string>
+    <string name="continue_btn" translatable="true">Continue</string>
+    <string name="we_have_pre_filled_mobile_number" translatable="true">We have pre-filled your NICT Bills and Services mobile number</string>
+    <string name="set_your_ABHA_address" translatable="true">Set your ABHA Address</string>
+    <string name="self_declared_username" translatable="true">ABHA Address is a self-declared username used to login into your ABHA account</string>
+    <string name="abha_number" translatable="true">ABHA Number</string>
+    <string name="abha_address" translatable="true">ABHA Address</string>
+    <string name="kindly_mentioned_abha_address" translatable="true">Kindly mentioned ABHA address</string>
+    <string name="abha_card" translatable="true">ABHA Card</string>
+    <string name="copy" translatable="true">Copy</string>
+    <string name="add_member" translatable="true">Add Members</string>
+    <string name="anyone_can_scan_this_health_records" translatable="true">Anyone can scan this QR &amp; request to access your health records with your consent</string>
+    <string name="abha_address_copied" translatable="true">ABHA Address Copied</string>
+    <string name="invalid_aadhaar_number_entered" translatable="true">Invalid Aadhaar number entered. Please enter a valid Aadhaar number.</string>
+    <string name="download_ABHA_card" translatable="true">Download ABHA card</string>
+    <string name="credit_score" translatable="true">Credit Score</string>
+    <string name="circle_state" translatable="true">Circle</string>
+    <string name="personal_details" translatable="true">Personal Details</string>
+    <string name="full_name" translatable="true">Full Name</string>
+    <string name="year_of_birth_abha" translatable="true">Year of birth</string>
+    <string name="profile" translatable="true">Profile</string>
+    <string name="edit" translatable="true">Edit</string>
+    <string name="enter_mobile_number" translatable="true">Enter Mobile Number</string>
+    <string name="kindly_select_circle_state" translatable="true">Kindly select circle</string>
+    <string name="household_services" translatable="true">Household services</string>
+    <string name="enter_pincode" translatable="true">Pincode</string>
+    <string name="user_state" translatable="true">State</string>
+    <string name="user_city" translatable="true">City</string>
+    <string name="abha_manager" translatable="true">ABHA Manager</string>
+    <string name="abha_login" translatable="true">Login</string>
+    <string name="health_id_number" translatable="true">Health Id Number</string>
+    <string name="kindly_enter_your_full_name" translatable="true">Kindly enter your full name</string>
+    <string name="kindly_select_state" translatable="true">Kindly select state</string>
+    <string name="kindly_select_city" translatable="true">Kindly select city</string>
+    <string name="kindly_enter_address" translatable="true">Kindly enter address</string>
+    <string name="dawai4u" translatable="true">Dawai4u</string>
+    <string name="chemists" translatable="true">Chemists</string>
+    <string name="age" translatable="true">Age</string>
+    <string name="state" translatable="true">State</string>
+    <string name="upload_prescription" translatable="true">Upload Prescription</string>
+    <string name="kindly_enter_age" translatable="true">Kindly enter age</string>
+    <string name="kindly_enter_state" translatable="true">Kindly enter state</string>
+    <string name="kindly_upload_prescription" translatable="true">Kindly upload prescription</string>
+    <string name="male" translatable="true">Male</string>
+    <string name="female">Female</string>
+    <string name="book_medicine">Book medicine</string>
+    <string name="order_history">Order History</string>
+    <string name="contact_us">Contact us</string>
+    <string name="order_submitted">Order Submitted Successfully</string>
+    <string name="order_status">Order Status</string>
+    <string name="have_a_referral_code">Have a referral code?</string>
+    <string name="enter_referral_code">Enter referral code</string>
+    <string name="referral_code">Referral code</string>
+    <string name="use_my_referral_code">Hey, use my referral code while signing and get Attractive reward points.</string>
+    <string name="capacity">Capacity</string>
+    <string name="vendor_details">Vendor Details</string>
+    <string name="category">Category</string>
+    <string name="container_type">Container Type</string>
+    <string name="more_details">More Details</string>
+    <string name="select_water_category">Select Water Category</string>
+    <string name="paniwala">Paniwala</string>
+    <string name="subscribe_to_NICT_Bills">Subscribe to NICT Bills and services for</string>
+    <string name="premium_experience">Premium Experience</string>
+    <string name="months_plan">12 Months Plan</string>
+    <string name="Enjoy_NICT_Bills_and_Services_premium_experience">Enjoy NICT Bills and Services premium experience</string>
+    <string name="no_vendor_available_in_your_area">No vendor available in your area</string>
+    <string name="no_capacity_available">Capacity was not found try to select another vendor</string>
+    <string name="enter_ABHA_Number_ABHA_address">Enter ABHA Number or ABHA Address </string>
+    <string name="abha_address_abha_number" translatable="true">ABHA Number/ABHA Address</string>
+    <string name="or" translatable="true">Or</string>
+    <string name="login_with_mobile_number" translatable="true">Verify with Mobile Number</string>
+    <string name="verify_with_ABHA_number_ABHA_address" translatable="true">Verify with ABHA number or ABHA address</string>
+    <string name="ABHA_user_status" translatable="true">ABHA User Details</string>
+    <string name="verify_ABHA" translatable="true">Verify ABHA</string>
+    <string name="OTP_will_be_sent_to_the_mobile_no" translatable="true">You can create your ABHA number using Aadhaar instantaneously. Please ensure that Aadhaar is linked to a Mobile Number as an OTP authentication will follow. If you do not have a Mobile Number linked, visit the nearest <a href="https://facility.ndhm.gov.in">ABDM participating facility</a> and seek assistance.</string>
+    <string name="i_have_read_the_disclaimer_and_agree" translatable="true"><font color="#000">I have read </font>the disclaimer and agree to the terms and conditions</string>
+    <string name="the_disclaimer_and_agree" translatable="true">Disclaimer and the terms and conditions</string>
+    <string name="please_enter_a_correct_aadhaar_number" translatable="true">Please enter a correct Aadhaar number</string>
+    <string name="please_accept_terms_and_conditions" translatable="true">Please accept the terms and conditions</string>
+    <string name="digilocker" translatable="true">DigiLocker</string>
+    <string name="you_have_requested_multiple_in_this_transaction" translatable="true">You have requested multiple OTPs in this transaction. Please try again in 30 minutes.</string>
+    <string name="we_just_sent_an_OTP_on_the_mobile_number" translatable="true">We just sent an OTP on the Mobile Number</string>
+    <string name="linked_with_your_aadhaar" translatable="true">linked with your Aadhaar</string>
+    <string name="otp_sent_to_the_mobile_number_registered_with_aadhaar" translatable="true">OTP sent to the mobile number registered with Aadhaar</string>
+    <string name="no_user_account_can_be_found_with_the_ABHA_Number" translatable="true">No user account can be found with the ABHA Number/ABHA Address provided.</string>
+    <string name="no_user_account_can_be_found_with_the_mobile_number" translatable="true">No user account can be found with the mobile number</string>
+    <string name="back" translatable="true">Back</string>
+    <string name="enter_ABHA_Address_ABHA_Number" translatable="true">Enter ABHA Address or ABHA Number</string>
+    <string name="no_user_account_can_be_found_with_the_mobile_number_provided" translatable="true">No user account can be found with the mobile number provided.</string>
+    <string name="your_request_submitted_successfully" translatable="true">Your request submitted successfully</string>
+    <string name="fastag" translatable="true">Fastag</string>
+    <string name="recharge_bill_payments" translatable="true">Recharge &amp; Bill Payments</string>
+    <string name="health" translatable="true">Health</string>
+    <string name="services" translatable="true">Services</string>
+    <string name="education_and_profile" translatable="true">Education And Profile</string>
+    <string name="ticket_booking" translatable="true">Ticket Booking</string>
+    <string name="flight_ticket" translatable="true">Flight Tickets</string>
+    <string name="bus_tickets" translatable="true">Bus Tickets</string>
+    <string name="train_tickets" translatable="true">Train Tickets</string>
+    <string name="hotel_booking" translatable="true">Hotel Booking</string>
+    <string name="enter_origin" translatable="true">Enter Origin</string>
+    <string name="enter_destination" translatable="true">Enter Destination</string>
+    <string name="depart" translatable="true">Depart</string>
+    <string name="credit" translatable="true">Credit shell Pnr</string>
+    <string name="booknow" translatable="true">Book Now</string>
+    <string name="select" translatable="true"> Select</string>
+    <string name="emailflight" translatable="true">Email</string>
+    <string name="passenger" translatable="true">Passenger</string>
+    <string name="country" translatable="true">Country :</string>
+    <string name="bookingDeatails" translatable="true">Booking Deatils</string>
+    <string name="flightInformation" translatable="true">Flight Information</string>
+    <string name="businfo" translatable="true">Bus Information</string>
+    <string name="bookingsummary" translatable="true">Summary</string>
+    <string name="addhotelmember" translatable="true">Add Member Deatils</string>
+    <string name="hotelnorms" translatable="true">Hotel Norms</string>
+    <string name="hotelroomstype" translatable="true">Room Type</string>
+    <string name="noofguest" translatable="true">No of Guests</string>
+    <string name="add" translatable="true">Add</string>
+    <string name="pbooking" translatable="true">Proceed To Bookng</string>
+    <string name="farerules" translatable="true">Fare Rules</string>
+    <string name="passengerinformation" translatable="true">Passenger Information</string>
+    <string name="busblockconti" translatable="true">Bus Block &amp; Continue</string>
+    <string name="busproceedbooking" translatable="true">Bus Proceed To Booking</string>
+    <string name="roamer" translatable="true">Roamer</string>
+    <string name="flightno" translatable="true">Flight No</string>
+    <string name="origin" translatable="true">Origin</string>
+    <string name="flightnmae" translatable="true">Flight Name</string>
+    <string name="busname" translatable="true">Travles Name</string>
+    <string name="destination" translatable="true">Destination</string>
+    <string name="departdateandtime" translatable="true">Dept Date Time</string>
+    <string name="arrvedateandtime" translatable="true">Arr Date Time</string>
+    <string name="contactmobile" translatable="true">Custmer Mobile</string>
+    <string name="hold" translatable="true">Hold</string>
+    <string name="ticket" translatable="true"> Ticket</string>
+    <string name="country1" translatable="true">Country</string>
+
+
+    <string name="tag_line" translatable="false">We need some details to fetch your \ncredit score</string>
+    <string name="tag_line_2" translatable="false">Just few more details to get best offers \nfor you!</string>
+    <string-array name="spinnerList">
+        <item>Select Details Mode</item>
+        <item>Pan Card</item>
+        <item>Aadhar Card</item>
+    </string-array>
+    <string name="home" translatable="false">H</string>
+    <string name="office" translatable="false">O</string>
+    <string name="other_add" translatable="false">X</string>
+    <string name="fastag_label_1">Home</string>
+    <string name="fastag_label_2">Status</string>
+    <string name="returnss">Return</string>
+    <string name="oneways">Oneway</string>
+    <string name="filters">Filter</string>
+    <string name="emails">Email</string>
+    <string name="first_name">First Name</string>
+    <string name="last_name">Last Name</string>
+    <string name="mobile_no">Mobile No</string>
+    <string name="push_booking">Push Booking to Roamer</string>
+    <string name="noassistance">No Assistance and Insurance Required</string>
+    <string name="hotelentrycityhotel">Enter City or Hotel Name</string>
+    <string name="checkin">Check In</string>
+    <string name="checkout">Check Out</string>
+    <string name="night">Night</string>
+    <string name="rooms">Rooms</string>
+    <string name="nationality">Nationality</string>
+    <string name="adaults">Adults(+18)</string>
+    <string name="child">Children(0-12)</string>
+    <string name="startrating">Star Rating</string>
+    <string name="hotelsearch">Hotel Search</string>
+    <string name="bussearch">Bus Search</string>
+    <string name="from"> From</string>
+    <string name="to"> To</string>
+    <string name="seatreserved">This seat is reserved.Please select Another</string>
+    <string name="price">Price:</string>
+    <string name="seatno">Seat No.</string>
+    <string name="seatprefrence">Seat Preferences </string>
+    <string name="terms">Term &amp; Conditions: </string>
+    <string name="termsmsg">I have reviewed and agreed on the fares and commission offered for this booking. </string>
+    <string name="payment">Payment</string>
+    <string name="onlinepayment">Online Payment</string>
+    <string name="payusing">Pay Using Credit Card</string>
+    <string name="pincode">Pincode:</string>
+    <string name="fax">Fax:</string>
+    <string name="contact">Contact:</string>
+    <string name="hotelimage">Hotel Image</string>
+    <string name="hotelpolicy">Hotel Policy</string>
+    <string name="hotelfacility">Hotel Facilities </string>
+    <string name="busviewseat">View Seat</string>
+    <string name="farerules1">Fare Rules and Quote</string>
+    <!--    <string name="fsearch" tools:ignore="ExtraTranslation">Flight Search </string>-->
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="fsearch" translatable="true">Flight Search</string>
+    <string name="fviewhistory" translatable="true">View History</string>
+    <string name="searchbus" translatable="true">Search</string>
+    <string name="datanot" translatable="true">Data Not Found!</string>
+    <string name="boooked" translatable="true">Booked</string>
+    <string name="selected" translatable="true">Selected</string>
+    <string name="unselected" translatable="true">unSelected</string>
+    <string name="ladies" translatable="true">Ladis</string>
+    <string name="seats" translatable="true">Seat(s):</string>
+    <string name="amounttbo" translatable="true">Amount:</string>
+    <string name="selectbpoint" translatable="true">Select Bording point</string>
+    <string name="selectdpoint" translatable="true">Select Droping point</string>
+    <string name="travelname" translatable="true">Traveller Name:</string>
+    <string name="seatprice" translatable="true">Seat Price:</string>
+    <string name="totalseatprice" translatable="true">Total Price:</string>
+    <string name="total" translatable="true">Total</string>
+    <string name="gtotal" translatable="true">Grand Total</string>
+    <string name="bconfrimation" translatable="true">Booking Confirmation"</string>
+    <string name="travlername" translatable="true">Traveler  name</string>
+    <string name="busid" translatable="true">BusId</string>
+    <string name="bordingname" translatable="true">Boarding Point</string>
+    <string name="dropingname" translatable="true">Droping Point</string>
+    <string name="orderid" translatable="true">Order Id</string>
+    <string name="ticketno" translatable="true">TicketNo</string>
+    <string name="invoiceno" translatable="true">Invoice No</string>
+    <string name="travelpnr" translatable="true">Travel PNR</string>
+    <string name="homeBACK" translatable="true">Back To Home</string>
+    <string name="status" translatable="true">Status</string>
+    <string name="panno" translatable="true">PanNo</string>
+    <string name="isleadbus" translatable="true">is LeadPassenger ?</string>
+    <string name="avilability" translatable="true">Availability</string>
+
+    //hotel
+    <string name="hotelinfo" translatable="true">Hotel Info</string>
+    <string name="hotelname" translatable="true">Hotel Name</string>
+    <string name="roomtype" translatable="true">Room Type:</string>
+    <string name="roomdesc" translatable="true">Room Desc:</string>
+    <string name="roomprice" translatable="true">Room Price::</string>
+    <string name="noofnight" translatable="true">No of Night:</string>
+    <string name="addchildage" translatable="true">Add Child Age</string>
+    <string name="hotelcode" translatable="true">HotelCode</string>
+    <string name="bookingid" translatable="true">Booking id</string>
+    <string name="bookingref" translatable="true">BookingRefNo</string>
+    <string name="bconfirmno" translatable="true">ConfirmationNo</string>
+    <string name="panmandtory" translatable="true">Note:FirstName and LastName should be match with PanCard</string>
+    <string name="addchild" translatable="true">Add Child</string>
+    <string name="ticketcancel" translatable="true">Ticket Cancel</string>
+
+    <!--    Amount:-->
+    <!--    ट्रैवेलर नाम-->
+
+    //hotel
+    <string name="addadult" translatable="true">Add Adult</string>
+
+
+    //farm
+
+    <string name="farm_equipment" translatable="true">Farmequipment</string>
+    <string name="farm_newrequest" translatable="true">New Request</string>
+    <string name="farmbooked" translatable="true">अभी बुक करें</string>
+    <string name="farmnext" translatable="true">जारी रखना!</string>
+
+    <string name="funame" translatable="true">प्रथम नाम</string>
+    <string name="flname" translatable="true">उपनाम</string>
+    <string name="femail" translatable="true">ईमेल</string>
+    <string name="fMOBILE" translatable="true">मोबाइल</string>
+    <string name="faddress" translatable="true">पूरा पता</string>
+    <string name="ffillinfo" translatable="true">जानकारी भरें !</string>
+    <string name="fgender" translatable="true">लिंग</string>
+    <string name="fmale" translatable="true">पुरुष</string>
+    <string name="ffemale" translatable="true">महिला</string>
+    <string name="fsubmit" translatable="true">जानकारी ऐड करे!</string>
+    <string name="fselect" translatable="true">समय का चयन करें!</string>
+
+    <string name="frentdtl" translatable="true">किराया विवरण!</string>
+    <string name="frent" translatable="true">प्रति घंटा किराया !</string>
+    <string name="fcity" translatable="true">शहर या ग्राम</string>
+    <string name="fordersummary" translatable="true">प्री बुकिंग विवरण</string>
+    <string name="farm_equipment1" translatable="true">कृषि उपकरण:</string>
+    <string name="ftimeselected" translatable="true">चयनित समय:</string>
+    <string name="frentone" translatable="true"> किराया :</string>
+    <string name="ftotal" translatable="true"> कुल :</string>
+    <string name="fcutmerdtl" translatable="true"> ग्राहक विवरण :</string>
+    <string name="fbacktodash" translatable="true">डैशबोर्ड पर वापस</string>
+    <string name="fbookconfm" translatable="true">बुकिंग की पुष्टि</string>
+    <string name="fbookingdatetime" translatable="true">बुकिंग की तारीख समय</string>
+    <string name="fbookingid" translatable="true">बुकिंग आईडी</string>
+    <string name="forderid" translatable="true">ऑर्डर आईडी</string>
+    <string name="forderprice" translatable="true">बुकिंग राशि</string>
+    <string name="fcMOBILE" translatable="true">ग्राहक मोबाइल</string>
+    <string name="fproductid" translatable="true">उत्पाद आयडी</string>
+    <string name="fproductrental" translatable="true">किराये का समय</string>
+    <string name="forderdate" translatable="true">ऑर्डर की तारीख</string>
+    <string name="fordersttaus" translatable="true">ऑर्डर की स्थिति</string>
+
+
+    //bloodlabtest
+    <string name="lab_test" translatable="true">Lab Test </string>
+
+
+</resources>

@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="15dp"
+                android:elevation="20sp">
+
+
+                <RelativeLayout
+                    android:id="@+id/pan_card"
+                    android:layout_width="match_parent"
+                    android:layout_height="175dp"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/ic_pancard">
+
+                    <LinearLayout
+                        android:id="@+id/header"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:layout_weight="1"
+                            android:src="@drawable/ic_rectangle_3" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:layout_weight="1"
+                            android:src="@drawable/ic_ashok" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:layout_weight="1"
+                            android:src="@drawable/ic_rectangle_3" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/header"
+                        android:layout_marginTop="15dp"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:layout_weight="1"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="10dp"
+                                android:layout_weight="1"
+                                android:fontFamily="@font/gotham_medium"
+                                android:text="Pan Number"
+                                android:textColor="@color/darkslategray"
+                                android:textSize="16sp" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="10dp"
+                                android:layout_weight="1"
+                                android:fontFamily="@font/gotham_medium"
+                                android:text="Date of Birth"
+                                android:textColor="@color/darkslategray"
+                                android:textSize="16sp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="horizontal">
+
+                            <EditText
+                                android:id="@+id/pan_number"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="10dp"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginEnd="10dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/edit_text_background"
+                                android:drawableEnd="@drawable/ic_layer_2"
+                                android:drawablePadding="10dp"
+                                android:fontFamily="@font/gotham_book_regular"
+                                android:hint="Enter Pan Number"
+                                android:inputType="textCapCharacters"
+                                android:maxLength="10"
+                                android:paddingVertical="10dp"
+                                android:paddingStart="5dp"
+                                android:paddingEnd="5dp"
+                                android:singleLine="true"
+                                android:textSize="12sp" />
+
+                            <TextView
+                                android:id="@+id/dob"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="10dp"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginEnd="10dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/edit_text_background"
+                                android:drawableEnd="@drawable/ic_layer_2"
+                                android:drawablePadding="10dp"
+                                android:fontFamily="@font/gotham_book_regular"
+                                android:hint="DD/MM/YY"
+                                android:paddingVertical="10dp"
+                                android:paddingStart="5dp"
+                                android:paddingEnd="5dp"
+                                android:singleLine="true"
+                                android:textSize="12sp" />
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/first"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/pan_card"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/gotham_medium"
+                    android:text="First Name"
+                    android:textColor="@color/darkslategray"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/first_input"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/first"
+                    android:layout_marginTop="5dp"
+                    android:backgroundTint="@color/darkslategray"
+                    android:fontFamily="@font/gotham_book_regular"
+                    android:hint="Enter First Name  Here"
+                    android:inputType="textCapWords"
+                    android:maxLength="50"
+                    android:singleLine="true"
+                    android:textSize="14sp" />
+
+
+                <LinearLayout
+                    android:id="@+id/middle_pan"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/first_input"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/middle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/first_input"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/gotham_medium"
+                        android:text="Middle Name"
+                        android:textColor="@color/darkslategray"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/gotham_book_regular"
+                        android:text="(optional)"
+                        android:textColor="@color/darkslategray"
+                        android:textSize="16sp" />
+                </LinearLayout>
+
+                <EditText
+                    android:id="@+id/middle_input"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/middle_pan"
+                    android:layout_marginTop="5dp"
+                    android:backgroundTint="@color/darkslategray"
+                    android:fontFamily="@font/gotham_book_regular"
+                    android:hint="Enter Middle Name  Here"
+                    android:inputType="textCapWords"
+                    android:maxLength="50"
+                    android:singleLine="true"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/last"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/middle_input"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/gotham_medium"
+                    android:text="Last Name"
+                    android:textColor="@color/darkslategray"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/last_input"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/last"
+                    android:layout_marginTop="5dp"
+                    android:backgroundTint="@color/darkslategray"
+                    android:fontFamily="@font/gotham_book_regular"
+                    android:hint="Enter Last Name Here"
+                    android:inputType="textCapWords"
+                    android:maxLength="50"
+                    android:singleLine="true"
+                    android:textSize="14sp" />
+
+                <ImageView
+                    android:id="@+id/logo"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_below="@id/last_input"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="-15dp"
+                    android:src="@drawable/nict_bills_services_logo" />
+
+                <TextView
+                    android:id="@+id/version"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/logo"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="-20dp"
+                    android:fontFamily="@font/gotham_medium"
+                    android:text="PAN Card"
+                    android:textColor="@color/lightseagreen" />
+
+                <TextView
+                    android:id="@+id/proceed"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/version"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="20dp"
+                    android:background="@drawable/proceed_bg"
+                    android:fontFamily="@font/gotham_medium"
+                    android:gravity="center_horizontal"
+                    android:paddingVertical="10dp"
+                    android:text="Update &amp; Proceed"
+                    android:textColor="@color/white" />
+            </RelativeLayout>
+
+        </RelativeLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

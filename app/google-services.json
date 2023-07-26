@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "82671159818",
+    "project_id": "notifynictbills",
+    "storage_bucket": "notifynictbills.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:82671159818:android:5b9fc989c8e60b26542df3",
+        "android_client_info": {
+          "package_name": "com.nictbills.app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "82671159818-fn9uiq9laohtg9mevip04b78l7hjoa28.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAI9hZbkohGOxlX07JUiUXfynKfQTFUVoI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "82671159818-fn9uiq9laohtg9mevip04b78l7hjoa28.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

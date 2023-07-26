@@ -1,0 +1,631 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <ImageView
+        android:id="@+id/creditScore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        app:srcCompat="@drawable/ic_creditscore" />
+
+    <TextView
+        android:id="@+id/know"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/creditScore"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/gotham_bold"
+        android:text="Know Your"
+        android:textColor="@color/darkslategray"
+        android:textSize="24sp" />
+
+    <LinearLayout
+        android:id="@+id/linear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/know"
+
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/score"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/creditScore"
+            android:layout_marginTop="-5dp"
+            android:fontFamily="@font/gotham_bold"
+            android:text="Score"
+            android:textColor="@color/darkslategray"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/instantly"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="-5dp"
+            android:fontFamily="@font/gotham_bold"
+            android:text="Instantly"
+            android:textColor="@color/lightseagreen"
+            android:textSize="24sp" />
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/weNeed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/linear"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/gotham_book_regular"
+        android:justificationMode="inter_word"
+        android:text="@string/tag_line_2"
+        android:textAlignment="center" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/weNeed"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp">
+
+        <RelativeLayout
+            android:id="@+id/rl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/weNeed">
+
+            <TextView
+                android:id="@+id/select"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/gotham_medium"
+                android:text="Select Gender"
+                android:textColor="@color/darkslategray"
+                android:textSize="16sp" />
+
+            <RadioGroup
+                android:id="@+id/radio_group"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/select"
+                android:layout_marginStart="10dp"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/male"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:buttonTintMode="@color/blue"
+                    android:checked="true"
+                    android:fontFamily="@font/gotham_book_regular"
+                    android:text="Male"
+
+                    android:textSize="14sp" />
+
+                <RadioButton
+                    android:id="@+id/female"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:buttonTintMode="@color/blue"
+                    android:fontFamily="@font/gotham_book_regular"
+                    android:text="Female"
+                    android:textSize="14sp" />
+
+                <RadioButton
+                    android:id="@+id/others"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:buttonTintMode="@color/blue"
+                    android:fontFamily="@font/gotham_book_regular"
+                    android:text="Others"
+                    android:textSize="14sp" />
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/inquiry"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/radio_group"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/gotham_medium"
+                android:text="Inquiry Purpose"
+                android:textColor="@color/darkslategray"
+                android:textSize="16sp" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardview"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_below="@id/inquiry"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="100dp"
+                android:layout_marginBottom="10dp"
+                app:cardCornerRadius="5dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#F1F1F1"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <com.nictbills.app.activities.credit_score.Spinner.CustomSpinner
+                        android:id="@+id/spinner"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/stroke">
+
+                    </com.nictbills.app.activities.credit_score.Spinner.CustomSpinner>
+
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:id="@+id/transaction_Amount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/cardview"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/gotham_book_regular"
+                android:text="Loan Amount "
+                android:textColor="@color/darkslategray"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/amount_input"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/transaction_Amount"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="15dp"
+                android:backgroundTint="@color/darkslategray"
+                android:fontFamily="@font/gotham_book_regular"
+                android:hint="Enter Loan Amount Here"
+                android:inputType="number"
+                android:maxLength="16"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/Address_details"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/amount_input"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/gotham_bold"
+                android:text="Address Details :"
+                android:textColor="@color/darkslategray"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/line1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/Address_details"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/gotham_book_regular"
+                android:text="Address Line 1"
+                android:textColor="@color/darkslategray"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/line_input"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/line1"
+                android:layout_marginStart="15dp"
+                android:inputType="textCapWords"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="15dp"
+                android:backgroundTint="@color/darkslategray"
+                android:fontFamily="@font/gotham_book_regular"
+                android:hint="Enter Address Here"
+                android:maxLength="150"
+                android:textSize="14sp" />
+
+            <LinearLayout
+                android:id="@+id/add_linear"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/line_input"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/line2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/gotham_book_regular"
+                    android:text="Address Line 2"
+                    android:textColor="@color/darkslategray"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/gotham_book_regular"
+                    android:text="(optional)"
+                    android:textColor="@color/darkslategray"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+
+            <EditText
+                android:id="@+id/line2_input"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/add_linear"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="5dp"
+                android:inputType="textCapWords"
+                android:layout_marginEnd="15dp"
+                android:backgroundTint="@color/darkslategray"
+                android:fontFamily="@font/gotham_book_regular"
+                android:hint="Enter Address Here"
+                android:maxLength="150"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/locality"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/line2_input"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/gotham_book_regular"
+                android:text="Locality"
+                android:textColor="@color/darkslategray"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/locality_input"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/locality"
+                android:layout_marginStart="15dp"
+                android:inputType="textCapWords"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="15dp"
+                android:backgroundTint="@color/darkslategray"
+                android:fontFamily="@font/gotham_book_regular"
+                android:hint="Enter Address Here"
+                android:maxLength="50"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/state"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/locality_input"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/gotham_book_regular"
+                android:text="State"
+                android:textColor="@color/darkslategray"
+                android:textSize="16sp" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/carview_state"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_below="@id/state"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="100dp"
+                android:layout_marginBottom="10dp"
+                app:cardCornerRadius="5dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#F1F1F1"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <com.nictbills.app.activities.credit_score.Spinner.CustomSpinner
+                        android:id="@+id/state_spinner"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/stroke">
+
+                    </com.nictbills.app.activities.credit_score.Spinner.CustomSpinner>
+
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:id="@+id/city"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/carview_state"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/gotham_book_regular"
+                android:text="City"
+                android:textColor="@color/darkslategray"
+                android:textSize="16sp" />
+
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/carview_city"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_below="@id/city"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="100dp"
+                android:layout_marginBottom="10dp"
+                app:cardCornerRadius="5dp">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#F1F1F1"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+
+                     <com.nictbills.app.activities.credit_score.Spinner.CustomSpinner
+                        android:id="@+id/city_spinner"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/stroke">
+
+                     </com.nictbills.app.activities.credit_score.Spinner.CustomSpinner>
+
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:id="@+id/address_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/carview_city"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/gotham_book_regular"
+                android:text="Address Type"
+                android:textColor="@color/darkslategray"
+                android:textSize="16sp" />
+
+            <RadioGroup
+                android:id="@+id/radio_group_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/address_type"
+                android:layout_marginStart="10dp"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/home"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:buttonTintMode="@color/blue"
+                    android:checked="true"
+                    android:fontFamily="@font/gotham_book_regular"
+                    android:text="Home"
+                    android:textSize="14sp" />
+
+                <RadioButton
+                    android:id="@+id/office"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:buttonTintMode="@color/blue"
+                    android:fontFamily="@font/gotham_book_regular"
+                    android:text="Office"
+                    android:textSize="14sp" />
+
+                <RadioButton
+                    android:id="@+id/other_add"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:buttonTintMode="@color/blue"
+                    android:fontFamily="@font/gotham_book_regular"
+                    android:text="Other Address"
+                    android:textSize="14sp" />
+            </RadioGroup>
+            <TextView
+                android:id="@+id/postal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/radio_group_type"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/gotham_book_regular"
+                android:text="Postal"
+                android:textColor="@color/darkslategray"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/postal_input"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/postal"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="5dp"
+                android:backgroundTint="@color/darkslategray"
+                android:layout_marginEnd="15dp"
+                android:fontFamily="@font/gotham_book_regular"
+                android:hint="Enter Postal Here"
+                android:inputType="number"
+                android:maxLength="6"
+                android:textSize="14sp" />
+
+
+            <TextView
+                android:id="@+id/phone_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/postal_input"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/gotham_book_regular"
+                android:text="Phone Type"
+                android:textColor="@color/darkslategray"
+                android:textSize="16sp" />
+            <androidx.cardview.widget.CardView
+                android:id="@+id/carview_phone_type"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_below="@id/phone_type"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="100dp"
+                android:layout_marginBottom="10dp"
+                app:cardCornerRadius="5dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#F1F1F1"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <com.nictbills.app.activities.credit_score.Spinner.CustomSpinner
+                        android:id="@+id/phone_spinner"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/stroke">
+
+                    </com.nictbills.app.activities.credit_score.Spinner.CustomSpinner>
+
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+            <TextView
+                android:id="@+id/phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/carview_phone_type"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/gotham_book_regular"
+                android:text="Phone Number"
+                android:textColor="@color/darkslategray"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/phone_input"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/phone"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="15dp"
+                android:backgroundTint="@color/darkslategray"
+                android:fontFamily="@font/gotham_book_regular"
+                android:hint="Enter Phone Number Here"
+                android:inputType="number"
+                android:maxLength="10"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/phone_input"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/gotham_book_regular"
+                android:text="Email"
+                android:textColor="@color/darkslategray"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/email_input"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/email"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="15dp"
+                android:singleLine="true"
+                android:backgroundTint="@color/darkslategray"
+                android:fontFamily="@font/gotham_book_regular"
+                android:hint="Enter Email Here"
+                android:maxLength="100"
+                android:textSize="14sp" />
+
+            <ImageView
+                android:id="@+id/logo"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_below="@id/email_input"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="-15dp"
+                android:src="@drawable/nict_bills_services_logo" />
+
+            <CheckBox
+                android:id="@+id/checkbox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/logo"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="-20dp"
+                android:fontFamily="@font/gotham_medium"
+                android:text="I hereby to submit details to NICT"
+                android:textColor="@color/lightseagreen" />
+
+            <TextView
+                android:id="@+id/proceed"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/checkbox"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/proceed_bg"
+                android:fontFamily="@font/gotham_medium"
+                android:gravity="center_horizontal"
+                android:paddingVertical="10dp"
+                android:text="Submit"
+                android:textColor="@color/white" />
+            <pl.droidsonroids.gif.GifImageView
+                android:id="@+id/new_small"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_below="@id/checkbox"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="20dp"
+                android:visibility="gone"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/small_loader"/>
+        </RelativeLayout>
+    </ScrollView>
+
+
+
+
+
+</RelativeLayout>

@@ -1,0 +1,183 @@
+[
+    {
+        "InquiryPurpose": "Auto Loan",
+        "IdCode":  "01"
+    },
+    {
+        "InquiryPurpose": "Housing Loan",
+        "IdCode":  "02"
+      
+    },
+    {
+        "InquiryPurpose": "Property Loan",
+        "IdCode":  "03"
+      
+    },
+    {
+        "InquiryPurpose": "Loan against Shares/Securities",
+        "IdCode":  "04"
+      
+    },
+    {
+        "InquiryPurpose": "Personal Loan",
+        "IdCode":  "05"
+      
+        
+    },
+    {
+        "InquiryPurpose": "Consumer Loan",
+        "IdCode":  "06"
+      
+    },
+    {
+        "InquiryPurpose": "Gold Loan",
+        "IdCode":  "07"
+      
+    },
+    {
+        "InquiryPurpose": "Education Loan",
+        "IdCode":  "08"
+      
+    },
+    {
+        "InquiryPurpose": "Loan to Professional",
+        "IdCode":  "09"
+      
+    },
+    {
+        "InquiryPurpose": "Credit Card",
+        "IdCode":  "10"
+      
+    },
+    {
+        "InquiryPurpose": "Lease",
+        "IdCode":  "11"
+      
+    },
+    {
+        "InquiryPurpose": "Overdraft",
+        "IdCode":  "12"
+      
+    },
+    {
+        "InquiryPurpose": "Two-wheeler Loan",
+        "IdCode":  "13"
+      
+    },
+    {
+        "InquiryPurpose": "Non-Funded Credit Facility",
+        "IdCode":  "14"
+      
+    },
+    {
+        "InquiryPurpose": "Loan Against Bank Deposits",
+        "IdCode":  "15"
+      
+    },
+    {
+        "InquiryPurpose": "Fleet Card",
+        "IdCode":  "16"
+      
+    },
+    {
+        "InquiryPurpose": "Commercial Vehicle Loan",
+        "IdCode":  "17"
+      
+    },
+    {
+        "InquiryPurpose": "Telco - Wireless",
+        "IdCode":  "18"
+      
+    },
+    {
+        "InquiryPurpose": "Telco - Broadband",
+        "IdCode":  "19"
+      
+    },
+    {
+        "InquiryPurpose": "Telco - Landline",
+        "IdCode":  "20"
+      
+    },
+    {
+        "InquiryPurpose": "Secured Credit Card",
+        "IdCode":  "31"
+      
+    },
+    {
+        "InquiryPurpose": "Used Car Loan",
+        "IdCode":  "32"
+      
+    },
+    {
+        "InquiryPurpose": "Construction Equipment Loan",
+        "IdCode":  "33"
+      
+    },
+    {
+        "InquiryPurpose": "Tractor Loan",
+        "IdCode":  "34"
+      
+    },
+    {
+        "InquiryPurpose": "Corporate Credit Card",
+        "IdCode":  "35"
+      
+    },
+    {
+        "InquiryPurpose": "Auto Lease",
+        "IdCode":  "03"
+      
+    },
+    {
+        "InquiryPurpose": "Business Loan",
+        "IdCode":  "51"
+      
+    },
+    {
+        "InquiryPurpose": "Business Loan-Priority Sector-Small Business",
+        "IdCode":  "52"
+      
+    },
+    {
+        "InquiryPurpose": "Business Loan - Priority Sector- Agriculture",
+        "IdCode":  "53"
+      
+    },
+    {
+        "InquiryPurpose": "Business Loan - Priority Sector- Others",
+        "IdCode":  "54"
+      
+    },
+    {
+        "InquiryPurpose": "Business Non-Funded Credit Facility",
+        "IdCode":  "55"
+      
+    },
+    {
+        "InquiryPurpose": "Business Non-Funded Credit Facility - Priority Sec...",
+        "IdCode":  "56"
+      
+    },
+    {
+        "InquiryPurpose": "Business Loan Against Bank Deposits",
+        "IdCode":  "57"
+      
+    },
+    {
+        "InquiryPurpose": "Staff Loan",
+        "IdCode":  "60"
+      
+    },
+    {
+        "InquiryPurpose": "Disclosure",
+        "IdCode":  "08"
+      
+    },
+    {
+        "InquiryPurpose": "Other",
+        "IdCode":  "00"
+      
+    }
+    
+]

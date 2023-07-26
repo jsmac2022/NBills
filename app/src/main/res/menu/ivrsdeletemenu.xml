@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:MenuDemoApp ="http://schemas.android.com/apk/res-auto">
+
+
+
+
+
+    <item android:id="@+id/mnudelete"
+        android:title="Delete IVRS"
+        MenuDemoApp:showAsAction="always" />
+
+    <!--<item android:id="@+id/mnuClose"-->
+        <!--android:title="Close"-->
+        <!--/>-->
+</menu>

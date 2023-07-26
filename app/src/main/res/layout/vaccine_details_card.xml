@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="2dp"
+        android:orientation="vertical">
+
+
+      <!--  <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:background="#4CAF50"
+            android:orientation="vertical">-->
+
+        <LinearLayout
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/linear_layout_customborder_vaccine_available"
+            android:padding="5dp"
+            android:gravity="center"
+            android:layout_margin="5dp"
+            >
+
+            <TextView
+                android:id="@+id/avilable_slot_TV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#FFFFFF"
+                android:textSize="12dp"
+                android:textStyle="bold"
+                android:text="NA" />
+
+
+
+        </LinearLayout>
+
+
+       <!-- <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="15"
+                android:background="#9CD89F"
+                android:textColor="#fff"
+                android:textSize="15dp"
+                />-->
+
+     <!--   <TextView
+            android:id="@+id/avilable_slot_TV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:text="15"
+            />-->
+
+      <!-- </LinearLayout>-->
+
+        <TextView
+            android:id="@+id/vaccine_name_TV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Vaccine"
+            android:textSize="8dp"
+            android:layout_gravity="center"
+            android:textColor="#000"/>
+
+        <TextView
+            android:id="@+id/age_TV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Age"
+            android:textSize="12dp"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:textColor="#2196F3"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>

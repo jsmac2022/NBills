@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:textSize="12sp"
+    android:text="tanishq"
+    android:paddingTop="10dp"
+    android:paddingLeft="5dp"
+    android:paddingBottom="10dp"
+    android:paddingEnd="10dp"
+    android:singleLine="true"
+    android:fontFamily="@font/gotham_medium"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+</TextView>

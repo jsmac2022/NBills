@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:id="@+id/validity_TV"
+                    android:layout_height="wrap_content"
+                    android:layout_width="0dp"
+                    android:textSize="15dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="1"
+                    android:textColor="#000"
+                    android:text="validity: "/>
+
+
+
+
+                    <LinearLayout
+                        android:id="@+id/amount_LinearLayout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:padding="5dp"
+                        android:background="@drawable/linear_layout_customborder"
+                        android:orientation="vertical">
+
+
+                        <TextView
+                            android:id="@+id/rate_TV"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:layout_marginRight="30dp"
+                            android:layout_marginLeft="30dp"
+                            android:layout_marginBottom="8dp"
+                            android:text="Amount"
+                            android:textStyle="bold"
+                            android:textColor="#000"
+                            android:textSize="14dp" />
+
+
+                    </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/description_TV"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:paddingRight="40dp"
+                    android:layout_marginLeft="5dp"
+                    android:textSize="15dp"
+                    android:textColor="#D3000000"
+                    android:text="Data"/>
+
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="2dp"
+        android:background="#EBC0C0C0"/>
+
+</LinearLayout>

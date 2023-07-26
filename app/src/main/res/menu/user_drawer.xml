@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_dashboard"
+            android:icon="@drawable/dashboard_black_24dp"
+            android:title="@string/dashboard" />
+        <item
+            android:id="@+id/nav_transaction_history"
+            android:icon="@drawable/transaction_history_black_24dp"
+            android:title="@string/transaction_history" />
+
+        <item
+            android:id="@+id/nav_rewards"
+            android:icon="@drawable/reward_stars_24"
+            android:title="@string/rewards_points" />
+<!--        <item-->
+<!--            android:id="@+id/nav_farm"-->
+<!--            android:icon="@drawable/plough"-->
+<!--            android:title="@string/farm_equipment" />-->
+
+        <item
+            android:id="@+id/nav_support"
+            android:icon="@drawable/support_phone_black_24dp"
+            android:title="@string/support" />
+
+        <item
+            android:id="@+id/nav_help_demo"
+            android:icon="@drawable/help_black_24dp"
+            android:title="@string/help" />
+
+
+        <item
+            android:id="@+id/nav_about"
+            android:icon="@drawable/about_black_24dp"
+            android:title="@string/about" />
+
+        <item
+            android:id="@+id/nav_termsAndConditions"
+            android:icon="@drawable/terms_and_conditions_black_24dp"
+            android:title="@string/terms_and_conditions" />
+
+
+        <item
+            android:id="@+id/nav_languageSetting"
+            android:icon="@drawable/language_black_24dp"
+            android:title="@string/language" />
+
+
+        <item
+            android:id="@+id/nav_logout"
+            android:icon="@drawable/logout_black_24dp"
+            android:title="@string/logout" />
+
+
+    </group>
+
+    <item android:title="@string/communicate">
+        <menu>
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_share_black_24dp"
+                android:title="@string/share" />
+
+            <item
+                android:visible="false"
+                android:id="@+id/nav_send"
+                android:icon="@drawable/arrow_back_24dp"
+                android:title="menu_send" />
+        </menu>
+    </item>
+
+</menu>

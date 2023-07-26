@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/creditScore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        app:srcCompat="@drawable/ic_creditscore" />
+
+
+
+    <TextView
+        android:id="@+id/know"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/creditScore"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/gotham_bold"
+        android:text="Know Your"
+        android:textColor="@color/darkslategray"
+        android:textSize="24sp" />
+
+    <LinearLayout
+        android:id="@+id/linear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/know"
+
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/score"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/creditScore"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="-5dp"
+            android:fontFamily="@font/gotham_bold"
+            android:text="Score"
+            android:textColor="@color/darkslategray"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/instantly"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/creditScore"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="-5dp"
+            android:fontFamily="@font/gotham_bold"
+            android:text="Instantly"
+            android:textColor="@color/lightseagreen"
+            android:textSize="24sp" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/spinner_linear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/linear"
+        android:orientation="vertical"
+        tools:ignore="MissingClass">
+
+        <com.nictbills.app.activities.credit_score.Spinner.CustomSpinner
+            android:id="@+id/spinner_fruits"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="85dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="85dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/stroke"
+            android:dropDownVerticalOffset="40dp"
+            android:elevation="5dp"
+            android:popupBackground="#f1f1f1"
+
+            />
+
+        <!--anim layout-->
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/weNeed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/spinner_linear"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/gotham_book_regular"
+        android:justificationMode="inter_word"
+        android:text="@string/tag_line"
+        android:textAlignment="center" />
+
+
+
+    <LinearLayout
+
+        android:id="@+id/hope"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/weNeed"
+        android:layout_marginTop="10dp">
+
+        <FrameLayout
+            android:id="@+id/thisFrame"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <FrameLayout
+                android:id="@+id/myframe"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            </FrameLayout>
+
+        </FrameLayout>
+    </LinearLayout>
+
+</RelativeLayout>

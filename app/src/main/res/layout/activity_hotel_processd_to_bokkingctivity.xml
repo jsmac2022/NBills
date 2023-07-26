@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".activities.tbo.hotel.HotelDashBoardActivity">
+
+        <RelativeLayout
+            android:id="@+id/toolbar_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.appbar.AppBarLayout
+                android:id="@+id/toolbar_layout_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <androidx.appcompat.widget.Toolbar
+                    android:id="@+id/toolbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="?attr/actionBarSize"
+                    android:background="#2196F3"
+                    app:titleTextColor="#FFFFFF">
+
+                    <ImageView
+                        android:id="@+id/backArrow_IMG"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/arrow_back_white_24dp" />
+
+                    <ImageView
+                        android:id="@+id/tv_header_title"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left"
+                        android:src="@drawable/nict_bills_services_logo" />
+
+                </androidx.appcompat.widget.Toolbar>
+
+            </com.google.android.material.appbar.AppBarLayout>
+
+        </RelativeLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_25sdp"
+                    android:background="@color/graynew"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/hotelinfo"
+                        android:textColor="@color/white"
+                        android:padding="@dimen/_3sdp"
+                        android:layout_marginLeft="@dimen/_10sdp"
+                        android:textSize="@dimen/_14sdp"
+                        />
+
+                </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:layout_marginTop="@dimen/_7sdp"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:text="@string/hotelname"
+                    android:textSize="@dimen/_14sdp" />
+
+                <TextView
+                    android:id="@+id/hotelname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:layout_marginTop="@dimen/_7sdp"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:textSize="@dimen/_14sdp" />
+
+
+
+            </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:layout_marginTop="@dimen/_7sdp"
+                        android:layout_marginLeft="@dimen/_10sdp"
+                        android:text="@string/roomtype"
+                        android:textSize="@dimen/_14sdp" />
+                    <TextView
+                        android:id="@+id/room_type"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:layout_marginTop="@dimen/_7sdp"
+                        android:layout_marginLeft="@dimen/_10sdp"
+                        android:textSize="@dimen/_14sdp" />
+
+                </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:layout_marginTop="@dimen/_7sdp"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:text="@string/roomdesc"
+                    android:textSize="@dimen/_14sdp" />
+
+                <TextView
+                    android:id="@+id/room_desc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:layout_marginTop="@dimen/_7sdp"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:textSize="@dimen/_14sdp" />
+
+            </LinearLayout>
+
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_25sdp"
+                    android:background="@color/graynew"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/noofguest"
+                        android:textColor="@color/white"
+                        android:padding="@dimen/_3sdp"
+                        android:layout_marginLeft="@dimen/_10sdp"
+                        android:textSize="@dimen/_14sdp"
+                        />
+
+                </LinearLayout>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recyclerView_hoteL_plist"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    android:layout_marginTop="10dp"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_25sdp"
+                    android:background="@color/graynew"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/hotelnorms"
+                        android:textColor="@color/white"
+                        android:padding="@dimen/_3sdp"
+                        android:layout_marginLeft="@dimen/_10sdp"
+                        android:textSize="@dimen/_14sdp" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/hotel_norms"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:text="NULL"
+                    android:layout_marginTop="@dimen/_7sdp"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:textSize="@dimen/_14sdp" />
+
+
+
+                <Button
+                    android:id="@+id/add_hotel_member"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:visibility="visible"
+                    android:layout_marginTop="@dimen/_15sdp"
+                    android:text="@string/pbooking"
+                    android:textStyle="bold" />
+
+
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</layout>

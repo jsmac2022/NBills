@@ -1,0 +1,340 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activities.PayUsingActivity"
+    android:id="@+id/parentId">
+
+    <RelativeLayout
+        android:id="@+id/toolbar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                app:titleTextColor="#FFFFFF"
+                android:background="#2196F3">
+
+                <ImageView
+                    android:id="@+id/backArrow_IMG"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/arrow_back_white_24dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/pay_using"
+                    android:textColor="#FFFFFF"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:layout_gravity="center"
+                    android:id="@+id/toolbar_title" />
+
+            </androidx.appcompat.widget.Toolbar>
+
+        </com.google.android.material.appbar.AppBarLayout>
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/payment_details_LinearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#B6EAF3F3"
+                    android:layout_marginTop="10dp"
+                    android:padding="5dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="16dp"
+                        android:textColor="#2196F3"
+                        android:layout_marginLeft="10dp"
+                        android:text="@string/payment_details" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginLeft="10dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/ivrs_no"
+                        android:textSize="15dp" />
+
+
+                    <TextView
+                        android:id="@+id/selected_ivrs_TV"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="ivrs_no."
+                        android:textColor="#2196F3"
+                        android:textStyle="bold"
+                        android:textSize="15dp" />
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginLeft="10dp"
+                    android:orientation="horizontal">
+
+
+                    <TextView
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/name"
+                        android:textSize="15dp" />
+
+
+                    <TextView
+                        android:id="@+id/selected_name_TV"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Name"
+                        android:textColor="#2196F3"
+                        android:textSize="15dp" />
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginLeft="10dp"
+                    android:orientation="horizontal">
+
+
+                    <TextView
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/amount"
+                        android:textSize="15dp" />
+
+
+                    <TextView
+                        android:id="@+id/selected_amount_TV"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Amount"
+                        android:textColor="#2196F3"
+                        android:textSize="15dp" />
+
+
+                </LinearLayout>
+
+
+                <!--<View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_margin="5dp"
+                    android:background="#c0c0c0"/>
+            -->
+        <LinearLayout
+            android:id="@+id/rewards_point_LL"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#B6EAF3F3"
+                    android:layout_marginTop="10dp"
+                    android:padding="5dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="16dp"
+                        android:textColor="#2196F3"
+                        android:layout_marginLeft="10dp"
+                        android:text="@string/rewards_points" />
+
+                </LinearLayout>
+
+
+
+            <CheckBox android:id="@+id/checkbox_reward_balance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/total_balance"
+                />
+
+
+            </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#B6EAF3F3"
+                    android:layout_marginTop="10dp"
+                    android:padding="5dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="16dp"
+                        android:textColor="#2196F3"
+                        android:layout_marginLeft="10dp"
+                        android:text="@string/pay_using" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/upi_checkbox_LinearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="5dp"
+                android:orientation="horizontal">
+
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/upi_logo"
+                    android:layout_gravity="center" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/upi"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="5dp"
+                    android:textColor="#000"
+                    android:textSize="16dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/no_extra_charges"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="5dp"
+                    android:textColor="#000"
+                    android:layout_weight="1"
+                    android:textSize="12dp" />
+
+
+
+                <ImageView
+                    android:id="@+id/upi_forward_arrow_IMG"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/forward_arrow_right_colour_24dp"
+                    android:layout_gravity="center" />
+
+
+            </LinearLayout>
+
+
+            <View
+                android:id="@+id/line_upi_view"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_margin="5dp"
+                android:background="#c0c0c0" />
+
+
+            <LinearLayout
+                android:id="@+id/raz_pay_checkbox_LinearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="5dp"
+                android:orientation="horizontal">
+
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/credit_card"
+                    android:layout_gravity="center" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/debit_credit_card_net_banking"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="5dp"
+                    android:textColor="#000"
+                    android:layout_weight="1"
+                    android:textSize="16dp" />
+
+
+                <ImageView
+                 android:id="@+id/razorpay_forward_IMG"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/forward_arrow_right_colour_24dp"
+                android:layout_gravity="center" />
+
+
+            </LinearLayout>
+
+
+            <View
+                android:id="@+id/razor_line_View"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_margin="5dp"
+                android:background="#c0c0c0" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>
+

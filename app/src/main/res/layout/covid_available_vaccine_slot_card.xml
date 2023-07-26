@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+
+    <LinearLayout
+        android:id="@+id/select_LinearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:padding="10dp"
+        android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/hospital_name_TV"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Hospital Name"
+            android:textColor="#000"
+            android:layout_weight="1"
+            android:textSize="15dp"/>
+
+
+       <TextView
+           android:id="@+id/book_now_TV"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:textColor="#2196F3"
+           android:textSize="16dp"
+
+           android:textStyle="bold"
+           android:layout_gravity="center"
+           android:gravity="right"
+           android:text="Book Now"/>
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/hospital_address_TV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Hospital Address"
+            android:maxLength="25"
+            android:layout_weight="1"
+            android:textSize="12dp"/>
+
+
+        <TextView
+            android:id="@+id/amount_TV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#000"
+            android:textSize="12dp"
+            android:layout_gravity="center"
+            android:gravity="right"
+            android:layout_weight="1"
+            android:text="Amount"/>
+
+
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/vaccine_details_RV"
+        android:layout_width="match_parent"
+        android:layout_marginTop="15dp"
+        android:nestedScrollingEnabled="false"
+        android:layout_height="wrap_content"/>
+
+
+    </LinearLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#c0c0c0"/>
+
+
+</LinearLayout>

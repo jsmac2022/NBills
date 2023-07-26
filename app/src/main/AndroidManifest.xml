@@ -1,0 +1,627 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.nictbills.app">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <queries android:exported="false">
+        <intent>
+            <action android:name="android.intent.action.VIEW" />
+
+            <category android:name="android.intent.category.DEFAULT" />
+
+            <data
+                android:host="pay"
+                android:scheme="upi" />
+        </intent>
+    </queries>
+
+    <application
+        android:name=".global.GlobalClass"
+        android:hardwareAccelerated="false"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true"
+        tools:replace="android:icon">
+        <activity
+            android:name=".LatTestListActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".activities.LabTest.LabListActivity"
+            android:exported="false"
+            android:screenOrientation="nosensor"
+            android:theme="@style/DashboardTheme" />
+        <activity
+            android:name=".activities.tbo.flight.AddFlightMemberActivity"
+            android:exported="false"
+            android:screenOrientation="nosensor"
+            android:theme="@style/DashboardTheme" />
+        <activity
+            android:name=".activities.tbo.bus.fragment.BusBoradingMainActivity"
+            android:exported="false"
+            android:screenOrientation="nosensor"
+            android:theme="@style/DashboardTheme" />
+        <activity
+            android:name=".activities.farmequipment.FarmBookingConfirmatonActivity"
+            android:exported="false"
+            android:screenOrientation="nosensor"
+            android:theme="@style/DashboardTheme" />
+        <activity
+            android:name=".activities.farmequipment.FarmOrderShowActivity"
+            android:exported="false"
+            android:screenOrientation="nosensor"
+            android:theme="@style/DashboardTheme" />
+        <activity
+            android:name=".activities.farmequipment.FarmUserInfoActivity"
+            android:exported="false"
+            android:screenOrientation="nosensor"
+            android:theme="@style/DashboardTheme" />
+        <activity
+            android:name=".activities.farmequipment.FarmEquipmentDetails"
+            android:exported="false"
+            android:screenOrientation="nosensor"
+            android:theme="@style/DashboardTheme" />
+        <activity
+            android:name=".activities.farmequipment.FarmEquipmentHistoryActivity"
+            android:exported="false"
+            android:screenOrientation="nosensor"
+            android:theme="@style/DashboardTheme" />
+        <activity
+            android:name=".activities.farmequipment.FarmEquipmentListActivity"
+            android:exported="false"
+            android:screenOrientation="nosensor"
+            android:theme="@style/DashboardTheme" />
+        <activity
+            android:name=".activities.tbo.hotel.AddHotelPassengerMenberActivity"
+            android:exported="false"
+            android:screenOrientation="nosensor"
+            android:theme="@style/DashboardTheme" />
+        <activity
+            android:name=".activities.farmequipment.FarmEquipmentDashboardActivity"
+            android:exported="false"
+            android:screenOrientation="nosensor"
+            android:theme="@style/DashboardTheme" />
+        <activity
+            android:name=".activities.tbo.bus.BusProcessedToBookingActivity"
+            android:exported="false"
+            android:screenOrientation="nosensor"
+            android:theme="@style/DashboardTheme" />
+        <activity
+            android:name=".activities.tbo.bus.BusBookingConfirmationActivity"
+            android:exported="false"
+            android:screenOrientation="nosensor"
+            android:theme="@style/DashboardTheme" />
+        <activity
+            android:name=".activities.tbo.bus.BusBookignHistoryActivity"
+            android:exported="false"
+            android:screenOrientation="nosensor"
+            android:theme="@style/DashboardTheme" />
+        <activity
+            android:name=".activities.tbo.hotel.HotelBookingHistoryActivity"
+            android:exported="false"
+            android:screenOrientation="nosensor"
+            android:theme="@style/DashboardTheme" />
+        <activity
+            android:name=".activities.tbo.flight.FlightBookingHistory"
+            android:exported="false"
+            android:screenOrientation="nosensor"
+            android:theme="@style/DashboardTheme" />
+        <activity
+            android:name=".activities.tbo.flight.BookingConfirmShowActivity"
+            android:exported="false"
+            android:screenOrientation="nosensor"
+            android:theme="@style/DashboardTheme" />
+        <activity
+            android:name=".activities.tbo.bus.AddBusMemberActivity"
+            android:exported="false"
+            android:screenOrientation="nosensor"
+            android:theme="@style/DashboardTheme" />
+        <activity
+            android:name=".activities.tbo.bus.BusSeatActivity"
+            android:exported="false"
+            android:screenOrientation="nosensor"
+            android:theme="@style/DashboardTheme" />
+        <activity
+            android:name=".activities.tbo.bus.BusListShowActivity"
+            android:exported="false"
+            android:screenOrientation="nosensor"
+            android:theme="@style/DashboardTheme" />
+        <activity
+            android:name=".activities.tbo.hotel.HotelProcessdToBokkingctivity"
+            android:exported="false"
+            android:screenOrientation="nosensor"
+            android:theme="@style/DashboardTheme" />
+        <activity
+            android:name=".activities.tbo.bus.BusPaymentActivity"
+            android:exported="false"
+            android:screenOrientation="nosensor"
+            android:theme="@style/DashboardTheme" />
+        <activity
+            android:name=".activities.tbo.bus.BusDashBoardActivity"
+            android:exported="false"
+            android:screenOrientation="nosensor"
+            android:theme="@style/DashboardTheme" />
+        <activity
+            android:name=".activities.tbo.hotel.HotelBookActivity"
+            android:exported="false"
+            android:screenOrientation="nosensor"
+            android:theme="@style/DashboardTheme" />
+        <activity
+            android:name=".activities.tbo.hotel.HotelPaymentActivity"
+            android:exported="false"
+            android:screenOrientation="nosensor"
+            android:theme="@style/DashboardTheme" />
+        <activity
+            android:name=".activities.tbo.hotel.HotelRoomGetActivity"
+            android:exported="false"
+            android:screenOrientation="nosensor"
+            android:theme="@style/DashboardTheme" />
+        <activity
+            android:name=".activities.tbo.hotel.HotelInfoActivity"
+            android:exported="false"
+            android:screenOrientation="nosensor"
+            android:theme="@style/DashboardTheme" />
+        <activity
+            android:name=".activities.tbo.flight.FlightPaymentActivity"
+            android:exported="false"
+            android:label="@string/app_name"
+            android:theme="@style/DashboardTheme" />
+        <activity
+            android:name=".activities.tbo.flight.FlightTicketActivity"
+            android:exported="false"
+            android:screenOrientation="nosensor"
+            android:theme="@style/DashboardTheme" />
+        <activity
+            android:name=".activities.tbo.hotel.HotelListShowActivity"
+            android:exported="false"
+            android:screenOrientation="nosensor"
+            android:theme="@style/DashboardTheme" />
+        <activity
+            android:name=".activities.tbo.hotel.HotelDashBoardActivity"
+            android:exported="false"
+            android:screenOrientation="nosensor"
+            android:theme="@style/DashboardTheme" />
+        <activity
+            android:name=".activities.tbo.flight.SeatViewActivity"
+            android:exported="false"
+            android:screenOrientation="nosensor"
+            android:theme="@style/DashboardTheme" />
+        <activity
+            android:name=".activities.tbo.flight.BookingReviewActivity"
+            android:exported="false"
+            android:screenOrientation="nosensor"
+            android:theme="@style/DashboardTheme" />
+        <activity
+            android:name=".activities.tbo.flight.PassengerDetailsActivity"
+            android:exported="false"
+            android:screenOrientation="nosensor"
+            android:theme="@style/DashboardTheme" />
+        <activity
+            android:name=".activities.tbo.flight.FlitListActivity"
+            android:exported="false"
+            android:screenOrientation="nosensor"
+            android:theme="@style/DashboardTheme" />
+        <activity
+            android:name=".activities.tbo.flight.FlightDashActivity"
+            android:exported="false"
+            android:screenOrientation="nosensor"
+            android:theme="@style/DashboardTheme" />
+        <activity
+            android:name=".activities.household.activity.HouseHoldVendorActivity"
+            android:exported="false"
+            android:screenOrientation="nosensor"
+            android:theme="@style/DashboardTheme" />
+        <activity
+            android:name=".activities.health_id_abdm.VerifyABHAUsingMobileOTPActivity"
+            android:exported="false"
+            android:screenOrientation="nosensor"
+            android:theme="@style/DashboardTheme" />
+        <activity
+            android:name=".activities.digilocker.DigiLockerActivity"
+            android:exported="false"
+            android:screenOrientation="nosensor"
+            android:theme="@style/DashboardTheme" />
+        <activity
+            android:name=".activities.paniwala.VendorProfileListActivity"
+            android:exported="false"
+            android:screenOrientation="nosensor"
+            android:theme="@style/DashboardTheme" />
+        <activity
+            android:name=".activities.paniwala.SelectWaterTypeCategoryActivity"
+            android:exported="false"
+            android:screenOrientation="nosensor"
+            android:theme="@style/DashboardTheme" />
+        <activity
+            android:name=".activities.paniwala.PaniwalaDashboardActivity"
+            android:exported="false"
+            android:screenOrientation="nosensor"
+            android:theme="@style/DashboardTheme" />
+        <activity
+            android:name=".activities.dawai4u.Dawai4UContactUsActivity"
+            android:exported="false"
+            android:screenOrientation="nosensor"
+            android:theme="@style/DashboardTheme" />
+        <activity
+            android:name=".activities.dawai4u.OrderHistoryDawai4UActivity"
+            android:exported="false"
+            android:screenOrientation="nosensor"
+            android:theme="@style/DashboardTheme" />
+        <activity
+            android:name=".activities.dawai4u.BookMedicineDawai4UActivity"
+            android:exported="false"
+            android:screenOrientation="nosensor"
+            android:theme="@style/DashboardTheme" />
+        <activity
+            android:name=".activities.dawai4u.UploadPrescriptionActivity"
+            android:exported="false"
+            android:screenOrientation="nosensor"
+            android:theme="@style/DashboardTheme" />
+        <activity
+            android:name=".activities.dawai4u.Dawai4UDashboardActivity"
+            android:exported="false"
+            android:screenOrientation="nosensor"
+            android:theme="@style/DashboardTheme" />
+        <activity
+            android:name=".activities.health_id_abdm.ABHALoginActivity"
+            android:exported="false"
+            android:screenOrientation="nosensor"
+            android:theme="@style/DashboardTheme" />
+        <activity
+            android:name=".activities.health_id_abdm.ABHALandingPageActivity"
+            android:exported="false"
+            android:screenOrientation="nosensor"
+            android:theme="@style/DashboardTheme" />
+        <activity
+            android:name=".activities.UserProfileActivity"
+            android:exported="false"
+            android:screenOrientation="nosensor"
+            android:theme="@style/DashboardTheme" />
+        <activity
+            android:name=".activities.paysprint.mobile_recharge_paysprint.MobileRechargeDashboardPaySprintActivity"
+            android:exported="false"
+            android:screenOrientation="nosensor"
+            android:theme="@style/DashboardTheme" />
+        <activity
+            android:name=".activities.health_id_abdm.ABHAUserProfileActivity"
+            android:exported="false"
+            android:screenOrientation="nosensor"
+            android:theme="@style/DashboardTheme" />
+        <activity
+            android:name=".activities.health_id_abdm.HealthIdDashboardActivity"
+            android:exported="false"
+            android:screenOrientation="nosensor"
+            android:theme="@style/DashboardTheme" />
+        <activity
+            android:name=".activities.NICTArogActivity"
+            android:exported="false"
+            android:screenOrientation="nosensor"
+            android:theme="@style/DashboardTheme" />
+        <activity
+            android:name=".activities.lic.LICPaymentActivity"
+            android:exported="false"
+            android:screenOrientation="nosensor"
+            android:theme="@style/DashboardTheme" />
+        <activity
+            android:name=".activities.RewardPointsDescriptionActivity"
+            android:exported="false"
+            android:screenOrientation="nosensor"
+            android:theme="@style/DashboardTheme" />
+        <activity
+            android:name=".activities.RewardPointsShowActivity"
+            android:exported="false"
+            android:screenOrientation="nosensor"
+            android:theme="@style/DashboardTheme" />
+        <activity
+            android:name=".activities.lic.LicBillsActivity"
+            android:exported="false"
+            android:screenOrientation="nosensor"
+            android:theme="@style/DashboardTheme" />
+        <activity
+            android:name=".activities.DTHRechargeActivity"
+            android:exported="false"
+            android:screenOrientation="nosensor"
+            android:theme="@style/DashboardTheme" />
+        <activity
+            android:name=".activities.PayUsingUPIRechargeActivity"
+            android:exported="false"
+            android:screenOrientation="nosensor"
+            android:theme="@style/DashboardTheme" />
+        <activity
+            android:name=".activities.MobileRechargeDasboardActivity"
+            android:exported="false"
+            android:screenOrientation="nosensor"
+            android:theme="@style/DashboardTheme" />
+        <activity
+            android:name=".activities.BookFinalAppointmentActivity"
+            android:exported="false"
+            android:screenOrientation="nosensor"
+            android:theme="@style/DashboardTheme" />
+        <activity
+            android:name=".activities.CovidSlotsAvailabilityActivity"
+            android:exported="false"
+            android:screenOrientation="nosensor"
+            android:theme="@style/DashboardTheme" />
+        <activity
+            android:name=".activities.BookCovidSlotActivity"
+            android:exported="false"
+            android:screenOrientation="nosensor"
+            android:theme="@style/DashboardTheme" />
+        <activity
+            android:name=".activities.BeneficiaryListActivity"
+            android:exported="false"
+            android:screenOrientation="nosensor"
+            android:theme="@style/DashboardTheme" />
+        <activity
+            android:name=".activities.AddNewCovidBeneficiaryActivity"
+            android:exported="false"
+            android:screenOrientation="nosensor"
+            android:theme="@style/DashboardTheme" />
+        <activity
+            android:name=".activities.MSBMDashboardActivity"
+            android:exported="false"
+            android:screenOrientation="nosensor"
+            android:theme="@style/DashboardTheme" />
+        <activity
+            android:name=".activities.MSBM_Course_SelectActivity"
+            android:exported="false"
+            android:screenOrientation="nosensor"
+            android:theme="@style/PaymentStatusTheme" />
+        <activity
+            android:name=".activities.VaccineDashboardActivity"
+            android:exported="false"
+            android:screenOrientation="nosensor"
+            android:theme="@style/DashboardTheme" />
+        <activity
+            android:name=".activities.BaseActivity"
+            android:exported="false"
+            android:screenOrientation="nosensor" />
+        <activity
+            android:name=".activities.PayUsingUPIActivity"
+            android:exported="false"
+            android:screenOrientation="nosensor"
+            android:theme="@style/DashboardTheme" />
+        <activity
+            android:name=".activities.PayUsingActivity"
+            android:exported="false"
+            android:screenOrientation="nosensor"
+            android:theme="@style/DashboardTheme" />
+        <activity
+            android:name=".activities.TransactionDescriptionsActivity"
+            android:exported="false"
+            android:screenOrientation="nosensor"
+            android:theme="@style/PaymentStatusTheme" />
+        <activity
+            android:name=".activities.AboutActivity"
+            android:exported="false"
+            android:screenOrientation="nosensor"
+            android:theme="@style/DashboardTheme" />
+        <activity
+            android:name=".activities.PrivacyPolicyActivity"
+            android:exported="false"
+            android:screenOrientation="nosensor"
+            android:theme="@style/DashboardTheme" />
+        <activity
+            android:name=".activities.PaymentStatusActivity"
+            android:exported="false"
+            android:screenOrientation="nosensor"
+            android:theme="@style/PaymentStatusTheme" />
+        <activity
+            android:name=".activities.AddMoreIVRSActivity"
+            android:exported="false"
+            android:screenOrientation="nosensor"
+            android:theme="@style/DashboardTheme" />
+        <activity
+            android:name=".activities.SplashScreenActivity"
+            android:exported="true"
+            android:screenOrientation="nosensor"
+            android:theme="@style/SplashTheme"
+            tools:ignore="IntentFilterExportedReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activities.WelcomeActivity"
+            android:exported="false"
+            android:screenOrientation="nosensor"
+            android:theme="@style/AppThemenew" />
+        <activity
+            android:name=".activities.TermsAndConditionsActivity"
+            android:exported="false"
+            android:screenOrientation="nosensor"
+            android:theme="@style/DashboardTheme" />
+        <activity
+            android:name=".activities.notification.NotificationDisplayActivity"
+            android:exported="false"
+            android:screenOrientation="nosensor"
+            android:theme="@style/SplashTheme" />
+        <activity
+            android:name=".activities.AboutUsActivity"
+            android:exported="false"
+            android:screenOrientation="nosensor"
+            android:theme="@style/DashboardTheme" />
+        <activity
+            android:name=".activities.HelpAndDemoActivity"
+            android:exported="false"
+            android:screenOrientation="nosensor"
+            android:theme="@style/DashboardTheme" />
+        <activity
+            android:name=".activities.SupportActivity"
+            android:exported="false"
+            android:screenOrientation="nosensor"
+            android:theme="@style/DashboardTheme" />
+        <activity
+            android:name=".activities.TransactionHistoryActivity"
+            android:exported="false"
+            android:screenOrientation="nosensor"
+            android:theme="@style/DashboardTheme" />
+        <activity
+            android:name=".activities.AddIVRSActivity"
+            android:exported="false"
+            android:screenOrientation="nosensor"
+            android:theme="@style/DashboardTheme" />
+        <activity
+            android:name=".activities.DashboardActivity"
+            android:exported="false"
+            android:screenOrientation="nosensor"
+            android:theme="@style/DashboardTheme" />
+        <activity
+            android:name=".activities.OTPVerifyActivity"
+            android:exported="false"
+            android:screenOrientation="nosensor"
+            android:theme="@style/DashboardTheme" />
+        <activity
+            android:name=".activities.LoginActivity"
+            android:exported="false"
+            android:screenOrientation="nosensor"
+            android:theme="@style/LoginTheme" />
+
+        <service
+            android:name=".activities.notification.MyFirebaseMessagingService2"
+            android:exported="true"
+            android:stopWithTask="true"
+            tools:ignore="IntentFilterExportedReceiver">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:enabled="true"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_path" />
+        </provider>
+
+        <receiver
+            android:name="com.razorpay.RzpTokenReceiver"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="rzp.device_token.share" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name="com.razorpay.CheckoutActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:exported="true"
+            android:theme="@style/RazorpayTheme"
+            tools:replace="android:theme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <data
+                    android:host="rzp.io"
+                    android:scheme="io.rzp" />
+            </intent-filter>
+        </activity> <!-- //rzp_live_5JBK5KK8qnwB4L -->
+        <!-- //rzp_test_oX1OKWhMh08DfR -->
+        <activity
+            android:name=".activities.household.activity.HomeActivity"
+            android:exported="false"
+            android:screenOrientation="nosensor"
+            android:theme="@style/DashboardTheme" />
+        <activity
+            android:name=".activities.household.activity.BasicActivity"
+            android:exported="false"
+            android:screenOrientation="nosensor"
+            android:theme="@style/DashboardTheme" />
+        <activity
+            android:name=".activities.household.activity.SubCategoryActivity"
+            android:exported="false"
+            android:screenOrientation="nosensor"
+            android:theme="@style/DashboardTheme" />
+        <activity
+            android:name=".activities.household.activity.SubCategoyTypeActivity"
+            android:exported="false"
+            android:screenOrientation="nosensor"
+            android:theme="@style/DashboardTheme" />
+        <activity
+            android:name=".activities.household.activity.ServiceAllActivity"
+            android:exported="false"
+            android:screenOrientation="nosensor"
+            android:theme="@style/DashboardTheme" />
+        <activity
+            android:name=".activities.household.activity.RazerpayActivity"
+            android:exported="false"
+            android:screenOrientation="nosensor"
+            android:theme="@style/DashboardTheme" />
+        <activity
+            android:name=".activities.household.activity.SearchActivity"
+            android:exported="false"
+            android:screenOrientation="nosensor"
+            android:theme="@style/DashboardTheme" />
+        <activity
+            android:name=".activities.fastag.Proprietor"
+            android:exported="false"
+            android:screenOrientation="nosensor"
+            android:theme="@style/DashboardTheme" />
+        <activity
+            android:name=".activities.fastag.Corporate"
+            android:exported="false"
+            android:screenOrientation="nosensor"
+            android:theme="@style/DashboardTheme" />
+        <activity
+            android:name=".activities.fastag.Individual"
+            android:exported="false"
+            android:screenOrientation="nosensor"
+            android:theme="@style/DashboardTheme" />
+        <activity
+            android:name=".activities.fastag.BasicActivity"
+            android:exported="false"
+            android:screenOrientation="nosensor"
+            android:theme="@style/DashboardTheme" />
+        <activity
+            android:name=".activities.fastag.FasTagCertificateActivity"
+            android:exported="false"
+            android:screenOrientation="nosensor"
+            android:theme="@style/DashboardTheme" />
+        <activity
+            android:name=".activities.fastag.MainActivity"
+            android:exported="false"
+            android:screenOrientation="nosensor"
+            android:theme="@style/DashboardTheme" /> <!-- <meta-data -->
+        <!-- android:name="com.razorpay.ApiKey" -->
+        <!-- android:exported="false" -->
+        <!-- android:value="rzp_live_5JBK5KK8qnwB4L" /> -->
+        <!-- android:value="rzp_test_LW7laP0Vn8XIVS"   test -->
+        <meta-data
+            android:name="com.razorpay.ApiKey"
+            android:exported="false"
+            android:value="rzp_live_5JBK5KK8qnwB4L" />
+        <meta-data
+            android:name="com.google.android.gms.vision.DEPENDENCIES"
+            android:exported="false"
+            android:value="barcode" />
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_icon"
+            android:exported="false"
+            android:resource="@drawable/nict_only_logo" />
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_color"
+            android:exported="false"
+            android:resource="@color/blue_btn_bg_pressed_color" />
+    </application>
+
+</manifest>

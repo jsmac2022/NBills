@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<network-security-config>
+    <domain-config>
+        <domain includeSubdomains="true">nictbills.com</domain>
+        <pin-set expiration="2022-09-18">
+            <pin digest="SHA-256">n56MW26jnZszHD7YRst+bf0ZQKDt/FOkQh2FjKFOfCY=</pin>
+        </pin-set>
+    </domain-config>
+
+    <domain-config>
+        <domain includeSubdomains="true">msbm.org.uk</domain>
+        <pin-set expiration="2023-02-27">
+            <pin digest="SHA-256">nLCSqZ0FUIb/WIt6wC3DGzgAUU2s9XSvx8W5jsKdAwA=</pin>
+        </pin-set>
+    </domain-config>
+
+    <domain-config>
+        <domain includeSubdomains="true">nict.ind.in</domain>
+        <pin-set expiration="2022-07-07">
+            <pin digest="SHA-256">EsA04b4gsoJjmn4iflgMbFMm9biZkua5Prfq9nAQCTY=</pin>
+        </pin-set>
+    </domain-config>
+
+    <domain-config>
+        <domain includeSubdomains="true">cdn-api.co-vin.in</domain>
+        <pin-set expiration="2023-02-27">
+            <pin digest="SHA-256">F1XuQc0g/3qVtARGC7ME5mFtqqOt+G4+e5IIvnQXdhY=</pin>
+        </pin-set>
+    </domain-config>
+
+    <domain-config>
+        <domain includeSubdomains="true">healthid.abdm.gov.in</domain>
+        <pin-set expiration="2023-01-03">
+            <pin digest="SHA-256">NoXeLRbp61uuw83TUx3Qa1/hvhd9yhxM1zdCIfvf6nw=</pin>
+        </pin-set>
+    </domain-config>
+
+
+    <domain-config>
+        <domain includeSubdomains="true">meraloha.com</domain>
+        <pin-set expiration="2023-05-23">
+            <pin digest="SHA-256">CkLeoAU3E932aRru/g2JNqFS9zPYaDOUW51gUTZGrgs=</pin>
+        </pin-set>
+    </domain-config>
+
+
+</network-security-config>

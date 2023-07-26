@@ -1,0 +1,51 @@
+package com.nictbills.app.activities.health_id_abdm.dto.upiVPADTO;
+
+public class GetQRCodeResponseDto {
+
+    private String code;
+    private String message;
+    private String merchantTranId;
+    private String refId;
+    private String qrString;
+
+
+    public String getCode() {
+        return code;
+    }
+
+    public void setCode(String code) {
+        this.code = code;
+    }
+
+    public String getMessage() {
+        return message;
+    }
+
+    public void setMessage(String message) {
+        this.message = message;
+    }
+
+    public String getMerchantTranId() {
+        return merchantTranId;
+    }
+
+    public void setMerchantTranId(String merchantTranId) {
+        this.merchantTranId = merchantTranId;
+    }
+
+    public String getRefId() {
+        return refId;
+    }
+
+    public void setRefId(String refId) {
+        this.refId = refId;
+    }
+
+    public String getQrString() {
+        return qrString;
+    }
+
+    public void setQrString(String qrString) {
+        this.qrString = qrString;
+    }
+}

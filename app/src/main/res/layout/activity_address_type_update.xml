@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <ImageView
+        android:id="@+id/creditScore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        app:srcCompat="@drawable/ic_creditscore" />
+
+    <TextView
+        android:id="@+id/know"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/creditScore"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/gotham_bold"
+        android:text="Know Your"
+        android:textColor="@color/darkslategray"
+        android:textSize="24sp" />
+
+    <LinearLayout
+        android:id="@+id/linear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/know"
+
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/score"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/creditScore"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="-5dp"
+            android:fontFamily="@font/gotham_bold"
+            android:text="Score"
+            android:textColor="@color/darkslategray"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/instantly"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/creditScore"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="-5dp"
+            android:fontFamily="@font/gotham_bold"
+            android:text="Instantly"
+            android:textColor="@color/lightseagreen"
+            android:textSize="24sp" />
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/weNeed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/linear"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/gotham_book_regular"
+        android:justificationMode="inter_word"
+        android:text="@string/tag_line_2"
+        android:textAlignment="center" />
+    <TextView
+        android:id="@+id/address_type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/weNeed"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/gotham_book_regular"
+        android:text="Address Type"
+        android:textColor="@color/darkslategray"
+        android:textSize="16sp" />
+
+    <RadioGroup
+        android:id="@+id/radio_group_type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/address_type"
+        android:layout_marginStart="10dp"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/home"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:buttonTintMode="@color/blue"
+            android:checked="true"
+            android:fontFamily="@font/gotham_book_regular"
+            android:text="Home"
+            android:textSize="14sp" />
+
+        <RadioButton
+            android:id="@+id/office"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:buttonTintMode="@color/blue"
+            android:fontFamily="@font/gotham_book_regular"
+            android:text="Office"
+            android:textSize="14sp" />
+
+        <RadioButton
+            android:id="@+id/other_add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:buttonTintMode="@color/blue"
+            android:fontFamily="@font/gotham_book_regular"
+            android:text="Other Address"
+            android:textSize="14sp" />
+    </RadioGroup>
+    <TextView
+        android:id="@+id/Update"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/radio_group_type"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/proceed_bg"
+        android:fontFamily="@font/gotham_medium"
+        android:gravity="center_horizontal"
+        android:paddingVertical="10dp"
+        android:text="Update &amp; Submit"
+        android:textColor="@color/white" />
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/new_small"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_below="@id/radio_group_type"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="20dp"
+        android:visibility="gone"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/small_loader"/>
+
+
+</RelativeLayout>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="colourGreen">#80C720</color>
+
+
+    <!-- Screens background color-->
+    <color name="bg_screen1">#3395ff</color>
+    <color name="bg_screen2">#3BA0F1</color>
+    <color name="bg_screen3">#66B1ED</color>
+    <color name="bg_screen4">#7BB5E3</color>
+
+    <!-- dots inactive colors -->
+    <color name="dot_dark_screen1">#1C7DE6</color>
+    <color name="dot_dark_screen2">#9CBEDA</color>
+    <color name="dot_dark_screen3">#A8CAE4</color>
+    <color name="dot_dark_screen4">#C4D9EA</color>
+
+    <!-- dots active colors -->
+    <color name="dot_light_screen1">#89C0EC</color>
+    <color name="dot_light_screen2">#2196F3</color>
+    <color name="dot_light_screen3">#2196F3</color>
+    <color name="dot_light_screen4">#2196F3</color>
+
+    <array name="array_dot_active">
+        <item>@color/dot_light_screen1</item>
+        <item>@color/dot_light_screen2</item>
+        <item>@color/dot_light_screen3</item>
+        <item>@color/dot_light_screen4</item>
+    </array>
+
+    <array name="array_dot_inactive">
+        <item>@color/dot_dark_screen1</item>
+        <item>@color/dot_dark_screen2</item>
+        <item>@color/dot_dark_screen3</item>
+        <item>@color/dot_dark_screen4</item>
+    </array>
+
+
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="white1">#FFFFFF</color>
+    <color name="darkslategray">#3f3f3f</color>
+    <color name="lightseagreen">#1399ca</color>
+    <color name="darkgray">#ababab</color>
+    <color name="graynew">#98AFC7</color>
+    <color name="blue">#008ED8</color>
+    <color name="blue1">#2196F3</color>
+    <color name="light_sky_blue">#F6F7FF</color>
+
+    <color name="colorGray">#CFCFCF</color>
+    <color name="colorGray1">#E1DFDF</color>
+    <color name="grayone">#D8D8D8</color>
+    <color name="green">#4CAF50</color>
+    <color name="transformers">#00FFFFFF</color>
+    <color name="colorPrimaryclick">#424242</color>
+    <color name="red1">#CB1F2B</color>
+    <color name="green00">#A4F6A7</color>
+    <color name="red00">#FEABA3</color>
+    <color name="red001">#FE0000</color>
+    <color name="red1212">#D0D6F6</color>
+    <color name="blue111">#6CC1E5</color>
+    <color name="blue222">#E8F1F7FA</color>
+    <color name="yello">#FFFF00</color>
+
+</resources>
